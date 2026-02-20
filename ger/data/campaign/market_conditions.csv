@@ -6,14 +6,14 @@ Große Flüchtlingsbevölkerung,large_refugee_population,,,TRUE,com.fs.starfarer
 Volturnische Hummergehege,volturnian_lobster_pens,"show_in_codex, codex_unlockable",TRUE,,com.fs.starfarer.api.impl.campaign.econ.ResourceDepositsCondition,"Eine Mischung aus verschiedenen Spezies der Alten Erde und ein wenig Fantasie brachten diese Kreatur hervor, die in den zermalmenden Tiefen des Meeresbodens von Volturn wild wächst. Der Geschmack soll außergewöhnlich sein.",graphics/icons/markets/lobster_pens.png,137
 Stellvertretende Nachfrage,vice_demand,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.ViceDemand,Die Nachfrage nach Lasterwaren ist hier ungewöhnlich hoch.,graphics/icons/markets/vice_demand.png,145
 Organisierte Kriminalität,organized_crime,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.OrganizedCrime,Durch kriminelle Aktivitäten werden Drogen und entnommene Organe produziert. Erhöht die Nachfrage nach Handwaffen (sowohl von verschiedenen Verbrecherbossen als auch von den Bürgern) und Marinesoldaten (von den lokalen Behörden).,graphics/icons/markets/organized_crime.png,148
-Frontier,frontier,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Frontier,"Weit entfernt von den kosmopolitischen Bevölkerungszentren sind das bloße Überleben, die Selbstversorgung und die Beschränkung auf das Nötigste die Regeln an der Grenze. Die Nachfrage nach Waffen und Vorräten steigt, die Nachfrage nach Luxusgütern sinkt.",graphics/icons/markets/frontier.png,130
+Grenzkolonie,frontier,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Frontier,"Weit entfernt von den kosmopolitischen Bevölkerungszentren sind das bloße Überleben, die Selbstversorgung und die Beschränkung auf das Nötigste die Regeln an der Grenze. Die Nachfrage nach Waffen und Vorräten steigt, die Nachfrage nach Luxusgütern sinkt.",graphics/icons/markets/frontier.png,130
 Schiffsabwrackzentrum,shipbreaking_center,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.ShipbreakingCenter,Ein wichtiges Zentrum für das Abwracken von Schiffen in dieser Region des Sektors. Die Flotten der großen Fraktionen und viele andere Kunden aus den Kernwelten des Sektors lassen hier ihre Schiffe verschrotten.,graphics/icons/markets/shipbreaking.png,360
 Handelszentrum,trade_center,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.TradeCenter,"Als bedeutendes Handelszentrum legen hier Handelsschiffe aus dem ganzen Sektor an, in der Erwartung, einen Käufer für ihre Waren zu finden - und im Gegenzug etwas für einen guten Gewinn zu kaufen.",graphics/icons/markets/trade_center.png,280
-Decivilized,decivilized,,,,com.fs.starfarer.api.impl.campaign.econ.Decivilized,"Hier gibt es kein stabiles Herrschaftssystem. Die Zivilisation ist zusammengebrochen und die derzeitige Bevölkerung ist praktisch unbekannt, obwohl Gruppen von Überlebenden, Banditen und Plünderern entdeckt werden können.",graphics/icons/markets/decivilized.png,130
+Dezivilisiert,decivilized,,,,com.fs.starfarer.api.impl.campaign.econ.Decivilized,"Hier gibt es kein stabiles Herrschaftssystem. Die Zivilisation ist zusammengebrochen und die derzeitige Bevölkerung ist praktisch unbekannt, obwohl Gruppen von Überlebenden, Banditen und Plünderern entdeckt werden können.",graphics/icons/markets/decivilized.png,130
 Dezivilisierte Teilbevölkerung,decivilized_subpop,,,,com.fs.starfarer.api.impl.campaign.econ.DecivilizedSubpop,"In Teilen von $market wurde die Zivilisation wiederhergestellt, oft mit Hilfe eines Gauss-Gewehrs. Allerdings gibt es immer noch eine unbekannte Anzahl von Überlebenden, Banditen und Plünderern in den Randgebieten.",graphics/icons/markets/decivilized.png,130
 Stillgelegter Bahnhof,abandoned_station,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.AbandonedStation,Dieser Bahnhof ist aufgegeben.,graphics/icons/markets/abandoned.png,130
 Heimwerkerindustrie,cottage_industry,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.CottageIndustry,"$Market verfügt über eine beträchtliche Basis an arbeitsintensiver Leichtindustrie mit niedrigem Technologieniveau. Sie erhöht die Nachfrage nach einfachen organischen Brennstoffen und Materialien und bietet eine ineffiziente, wenn auch charmante handwerkliche Versorgung mit Haushaltswaren.",graphics/icons/markets/cottage_industry.png,230
-Outpost,outpost,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Outpost,"$Market wird ähnlich wie eine Garnison oder ein großes Raumschiff geführt, mit einer festen offiziellen Kommandostruktur. Dies verbessert die Stabilität, erfordert aber auch einige Mitarbeiter, die sich um die interne Sicherheit kümmern.",graphics/icons/markets/outpost.png,130
+Außenposten,outpost,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Outpost,"$Market wird ähnlich wie eine Garnison oder ein großes Raumschiff geführt, mit einer festen offiziellen Kommandostruktur. Dies verbessert die Stabilität, erfordert aber auch einige Mitarbeiter, die sich um die interne Sicherheit kümmern.",graphics/icons/markets/outpost.png,130
 Luddische Mehrheit,luddic_majority,"show_in_codex, codex_unlockable",,TRUE,com.fs.starfarer.api.impl.campaign.econ.LuddicMajority,,graphics/icons/markets/luddic_majority.png,142
 Getarnte Minenfelder,stealth_minefields,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.StealthMinefields,Ein Netz von versteckten Minen bietet $market Sicherheit vor neugierigen Außenstehenden. Verbessert die Stabilität.,graphics/icons/markets/stealth_mines.png,510
 Regionale Hauptstadt,regional_capital,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.RegionalCapital,"Ein wichtiges Zentrum für Verwaltung, Sicherheit und Logistik. Verbessert die Stabilität.",graphics/icons/markets/capital.png,500
@@ -33,21 +33,21 @@ Tundra-Welt,tundra,,TRUE,,com.fs.starfarer.api.impl.campaign.econ.WorldTundra,"D
 Kryovulkanische Welt,cryovolcanic,,TRUE,,com.fs.starfarer.api.impl.campaign.econ.WorldUninhabitable,"Eine Welt, die jenseits der tiefsten Kälte gefroren ist, auf der Methanschnee auf Berge von Wassereis fällt und Vulkane mit Ammoniak ausbrechen. Stellare Strahlung zersetzt die flüchtigen Stoffe und bildet eine Atmosphäre aus leichten Gasen wie Stickstoff und Sauerstoff, während Wasserstoff in den Weltraum geschleudert wird.",graphics/icons/markets/cryo_world_wide.png,10
 ,,,,,,,,
 Dissidentenbevölkerung,dissident,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Dissident,"$Market ist eine Müllhalde für Dissidenten, Rebellen, Freidenker, Künstler und andere Unruhestifter. Erhöht die Nachfrage nach Waffen und Marinesoldaten zur Überwachung des Pöbels. Erhöht die Verfügbarkeit von Besatzungsmitgliedern aufgrund von Auswanderung.",graphics/icons/markets/dissidents.png,139
-Headquarters,headquarters,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Headquarters,"$Market ist ein militärisches Befehls- und Logistikzentrum für das herrschende Gemeinwesen. Erhöht die Marktstabilität.
+Hauptquartier,headquarters,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Headquarters,"$Market ist ein militärisches Befehls- und Logistikzentrum für das herrschende Gemeinwesen. Erhöht die Marktstabilität.
 
 Erhöht die Qualität und Anzahl der Offiziere in den Flotten von $market",graphics/icons/markets/headquarters.png,360
 Hydroponik-Komplex,hydroponics_complex,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Hydroponics,"Versiegelte landwirtschaftliche Produktionsanlagen in der Biosphäre, die den Anbau in der Umlaufbahn oder auf der Oberfläche unwirtlicher Welten ermöglichen. Erfordert eine Besatzung für den Betrieb, ein organisches Wachstumsmedium und schwere Maschinen für den Unterhalt.",graphics/icons/markets/hydroponics.png,120
 ,,,,,,,,
-Population,population_1,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,Nur ein paar Dutzend Menschen leben hier dauerhaft.,graphics/icons/markets/population01.png,20
-Population,population_2,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,Wenige hundert Menschen bevölkern $marketName.,graphics/icons/markets/population02.png,20
-Population,population_3,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,Tausende von Menschen nennen $marketName ihr Zuhause.,graphics/icons/markets/population03.png,20
-Population,population_4,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,Zehntausende von Menschen leben auf $marketName.,graphics/icons/markets/population04.png,20
-Population,population_5,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,$MarketName ist die Heimat von Hunderttausenden von Menschen.,graphics/icons/markets/population05.png,20
-Population,population_6,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,Die Bevölkerung von $marketName geht in die Millionen.,graphics/icons/markets/population06.png,20
-Population,population_7,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,$MarketName ist eine Welt mit zig Millionen Menschen.,graphics/icons/markets/population07.png,20
-Population,population_8,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,$MarketName ist eine der wenigen Welten des Sektors mit einer Bevölkerung von mehreren hundert Millionen Menschen.,graphics/icons/markets/population08.png,20
-Population,population_9,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,Als wertvoller Zufluchtsort für die Menschheit in einer gefährlichen Galaxie ist $marketName die Heimat von Milliarden von Seelen.,graphics/icons/markets/population09.png,20
-Population,population_10,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$MarketName ist ein dominierendes Bevölkerungszentrum im Sektor, das mit der Alten Erde konkurriert, da es die Heimat von mehreren Milliarden Menschen ist.",graphics/icons/markets/population10.png,20
+Bevölkerung,population_1,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,Nur ein paar Dutzend Menschen leben hier dauerhaft.,graphics/icons/markets/population01.png,20
+Bevölkerung,population_2,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,Wenige hundert Menschen bevölkern $marketName.,graphics/icons/markets/population02.png,20
+Bevölkerung,population_3,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,Tausende von Menschen nennen $marketName ihr Zuhause.,graphics/icons/markets/population03.png,20
+Bevölkerung,population_4,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,Zehntausende von Menschen leben auf $marketName.,graphics/icons/markets/population04.png,20
+Bevölkerung,population_5,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,$MarketName ist die Heimat von Hunderttausenden von Menschen.,graphics/icons/markets/population05.png,20
+Bevölkerung,population_6,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,Die Bevölkerung von $marketName geht in die Millionen.,graphics/icons/markets/population06.png,20
+Bevölkerung,population_7,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,$MarketName ist eine Welt mit zig Millionen Menschen.,graphics/icons/markets/population07.png,20
+Bevölkerung,population_8,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,$MarketName ist eine der wenigen Welten des Sektors mit einer Bevölkerung von mehreren hundert Millionen Menschen.,graphics/icons/markets/population08.png,20
+Bevölkerung,population_9,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,Als wertvoller Zufluchtsort für die Menschheit in einer gefährlichen Galaxie ist $marketName die Heimat von Milliarden von Seelen.,graphics/icons/markets/population09.png,20
+Bevölkerung,population_10,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Population,"$MarketName ist ein dominierendes Bevölkerungszentrum im Sektor, das mit der Alten Erde konkurriert, da es die Heimat von mehreren Milliarden Menschen ist.",graphics/icons/markets/population10.png,20
 ,,,,,,,,
 ,,,,,,,,
 ,,,,,,,,
@@ -62,7 +62,7 @@ Unterbrechung des Handels,event_trade_disruption,,,TRUE,com.fs.starfarer.api.imp
 
 Die folgenden Waren sind betroffen:
 $commoditySummary",graphics/icons/markets/trade_disruption.png,1100
-Smuggling,event_smuggling,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Smuggling,"$market hat ein hohes Maß an Schmuggelaktivitäten zu verzeichnen.
+Schmuggel,event_smuggling,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Smuggling,"$market hat ein hohes Maß an Schmuggelaktivitäten zu verzeichnen.
 
 - Durch $smugglingPenalty verringerte Stabilität",graphics/icons/markets/smuggling.png,1000
 System-Prämie,event_bounty,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.SystemBounty,,graphics/icons/markets/bounty.png,1000
@@ -76,7 +76,7 @@ Die Piraten haben höchstwahrscheinlich irgendwo in der Nähe einen Stützpunkt.
 Feindliche Aktivitäten,hostile_activity,,,TRUE,com.fs.starfarer.api.impl.campaign.intel.events.HostileActivity,,graphics/icons/markets/pirate_activity.png,1350
 Pause für Piraten,piracy_respite,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.PiracyRespite,"Diese Kolonie erlebt eine Atempause von den Plünderungen der Piraterie, die sonst in diesem Sektor so häufig vorkommen.",graphics/icons/markets/respite40.png,1375
 Etabliertes Gemeinwesen,established_polity,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.EstablishedPolity,,graphics/icons/markets/established_polity.png,1380
-Blockaded,blockaded,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Blockaded,"Das System, in dem sich diese Kolonie befindet, ist von einer Blockade betroffen, und die reguläre Handelsschifffahrt leidet unter Schikanen oder Schlimmerem. Die Auswirkungen werden so lange anhalten, bis die Blockademacht abzieht oder vernichtend geschlagen wird.",graphics/icons/markets/blockade.png,1385
+Blockade,blockaded,,,TRUE,com.fs.starfarer.api.impl.campaign.econ.Blockaded,"Das System, in dem sich diese Kolonie befindet, ist von einer Blockade betroffen, und die reguläre Handelsschifffahrt leidet unter Schikanen oder Schlimmerem. Die Auswirkungen werden so lange anhalten, bis die Blockademacht abzieht oder vernichtend geschlagen wird.",graphics/icons/markets/blockade.png,1385
 Luddic Path-Zellen,pather_cells,,,TRUE,com.fs.starfarer.api.impl.campaign.intel.bases.LuddicPathCells,,graphics/icons/markets/pather_cells.png,1400
 ,,,,,,,,
 # Stand-alone-Bedingungen,,,,,,,,
@@ -87,7 +87,7 @@ Kommunikationsrelais (versteckt),comm_relay,,,TRUE,com.fs.starfarer.api.impl.cam
 ,,,,,,,,
 ,,,,,,,,
 # procgen Bedingungen,,,,,,,,
-Habitable,habitable,,TRUE,,com.fs.starfarer.api.impl.campaign.econ.Habitable,Menschen können ungeschützt an der Oberfläche von $market. überleben.,graphics/icons/markets/habitable.png,21
+Bewohnbar,habitable,,TRUE,,com.fs.starfarer.api.impl.campaign.econ.Habitable,Menschen können ungeschützt an der Oberfläche von $market. überleben.,graphics/icons/markets/habitable.png,21
 ,,,,,,,,
 ,,,,,,,,
 Verstreute Ruinen,ruins_scattered,,TRUE,,com.fs.starfarer.api.impl.campaign.econ.BaseHazardCondition,"Diese Welt wurde von dem großen Projekt der Domain vor dem Zusammenbruch nur leicht berührt. Es gibt nur noch verstreute, zerbrochene Kuppeln, in denen vielleicht wertvolle Materialien gelagert sind.",graphics/icons/markets/ruins_scattered.png,100
@@ -96,10 +96,10 @@ Ausgedehnte Ruinen,ruins_extensive,,TRUE,,com.fs.starfarer.api.impl.campaign.eco
 Weite Ruinen,ruins_vast,,TRUE,,com.fs.starfarer.api.impl.campaign.econ.BaseHazardCondition,"$Market ist mit riesigen Ruinen bedeckt: Städte, Fabriken, Minen, Bauernhöfe, Häuser. Tote gibt es in Hülle und Fülle, verwoben mit verwertbaren Materialien, Waren, Werkzeugen und Waffen. Diese Welt ist ein Grab für die Hybris des Domain-Projekts der galaktischen Kolonisierung und Hegemonie.",graphics/icons/markets/ruins_vast.png,100
 ,,,,,,,,
 ,,,,,,,,
-Cold,cold,,TRUE,,com.fs.starfarer.api.impl.campaign.econ.BaseHazardCondition,"Die niedrigen Temperaturen auf $market erfordern eine spezielle Ausrüstung für den normalen Betrieb, was die Lebenserhaltung und die Infrastruktur erschwert.",graphics/icons/markets/cold.png,25
+Kalt,cold,,TRUE,,com.fs.starfarer.api.impl.campaign.econ.BaseHazardCondition,"Die niedrigen Temperaturen auf $market erfordern eine spezielle Ausrüstung für den normalen Betrieb, was die Lebenserhaltung und die Infrastruktur erschwert.",graphics/icons/markets/cold.png,25
 Extreme Kälte,very_cold,,TRUE,,com.fs.starfarer.api.impl.campaign.econ.BaseHazardCondition,"Extreme Kälte erfordert eine spezielle Ausrüstung und ein spezielles Protokoll, um Operationen auf $market sicher durchzuführen, was die Logistik, die Lebenserhaltung und die Infrastruktur erschwert.",graphics/icons/markets/cold_extreme.png,25
 ,,,,,,,,
-Hot,hot,,TRUE,,com.fs.starfarer.api.impl.campaign.econ.BaseHazardCondition,"Die hohen Temperaturen in $market erfordern eine spezielle Ausrüstung für den normalen Betrieb, was die Lebenserhaltung und die Infrastruktur erschwert.",graphics/icons/markets/hot.png,25
+Heiß,hot,,TRUE,,com.fs.starfarer.api.impl.campaign.econ.BaseHazardCondition,"Die hohen Temperaturen in $market erfordern eine spezielle Ausrüstung für den normalen Betrieb, was die Lebenserhaltung und die Infrastruktur erschwert.",graphics/icons/markets/hot.png,25
 Extreme Hitze,very_hot,,TRUE,,com.fs.starfarer.api.impl.campaign.econ.BaseHazardCondition,"Die extreme Hitze erfordert eine spezielle Ausrüstung und ein spezielles Protokoll, um auf $market sicher zu arbeiten, was die Logistik, die Lebenserhaltung und die langfristige Stabilität der Infrastruktur erheblich erschwert.",graphics/icons/markets/hot_extreme.png,25
 ,,,,,,,,
 ,,,,,,,,
@@ -119,7 +119,7 @@ Extremes Wetter,extreme_weather,,TRUE,,com.fs.starfarer.api.impl.campaign.econ.B
 Niedrige Schwerkraft,low_gravity,,TRUE,,com.fs.starfarer.api.impl.campaign.econ.LowGravity,"Die Schwerkraft ist auf der Oberfläche von $market. außerordentlich gering, wenn auch deutlich über null g. Der Arbeitsablauf und der Betrieb von (relativ) schweren Maschinen wird durch die nicht standardisierten Verfahren erschwert, die erforderlich sind, um mit den veränderten Bedingungen von Reibung, Gewicht und Druckdynamik umzugehen.",graphics/icons/markets/gravity_low.png,24
 Hohe Schwerkraft,high_gravity,,TRUE,,com.fs.starfarer.api.impl.campaign.econ.HighGravity,"Die Schwerkraft auf der Oberfläche von $market ist erdrückend hoch. Die Menschen benötigen angetriebene Exoskelette, um sich regelmäßig fortzubewegen, und finden selbst einfache Tätigkeiten anstrengend. Der ständige Aufenthalt auf der Erde ist bestenfalls zermürbend. Bei allen Operationen besteht erhöhte Absturzgefahr und - wenn die Spezialtechnik nicht mit angemessener Paranoia ausgeführt wird - die Gefahr des strukturellen Zusammenbruchs.",graphics/icons/markets/gravity_high.png,24
 ,,,,,,,,
-Irradiated,irradiated,,TRUE,,com.fs.starfarer.api.impl.campaign.econ.BaseHazardCondition,"Die Oberfläche von $market ist von Strahlung verwüstet. Jedes Lebewesen muss sich in einem abgeschirmten Habitat aufhalten, um hier lange zu überleben. Ungehärtete Schaltkreise und nanoskalige Materialien oder Maschinen werden unter diesen rauen Bedingungen ebenfalls schnell versagen.",graphics/icons/markets/irradiated.png,29
+Bestrahlt,irradiated,,TRUE,,com.fs.starfarer.api.impl.campaign.econ.BaseHazardCondition,"Die Oberfläche von $market ist von Strahlung verwüstet. Jedes Lebewesen muss sich in einem abgeschirmten Habitat aufhalten, um hier lange zu überleben. Ungehärtete Schaltkreise und nanoskalige Materialien oder Maschinen werden unter diesen rauen Bedingungen ebenfalls schnell versagen.",graphics/icons/markets/irradiated.png,29
 ,,,,,,,,
 ,,,,,,,,
 Feindliche Biosphäre,inimical_biosphere,,TRUE,,com.fs.starfarer.api.impl.campaign.econ.LCAttractorLow,"Die Biosphäre von $market ist für ungeschützte menschliche Wesen tödlich. Während die Bedingungen für Biowissenschaftler faszinierend sind, werden die Techniker an der Oberfläche bei der Durchführung von Routineaufgaben durch strenge Quarantäneprotokolle behindert.",graphics/icons/markets/inimical_biosphere.png,30
@@ -127,12 +127,12 @@ Feindliche Biosphäre,inimical_biosphere,,TRUE,,com.fs.starfarer.api.impl.campai
 Wasserbedeckte Oberfläche,water_surface,,TRUE,,com.fs.starfarer.api.impl.campaign.econ.ResourceDepositsCondition,"Es handelt sich um eine Welt im Ozean, in der es keine feste Oberfläche gibt, auf der man landen, gehen oder bauen könnte. Der Einsatz wird durch die Notwendigkeit einer speziellen Ausbildung und Ausrüstung erschwert.",graphics/icons/markets/water_covered.png,31
 ,,,,,,,,
 Schlechtes Licht,poor_light,,TRUE,,com.fs.starfarer.api.impl.campaign.econ.BaseHazardCondition,Das Licht von $market's primärem Licht spendet dieser Welt nur schwache Erleuchtung und Energie.,graphics/icons/markets/poor_light.png,32
-Darkness,dark,,TRUE,,com.fs.starfarer.api.impl.campaign.econ.BaseHazardCondition,Die Oberfläche von $market ist dunkel und schattenreich und wird von seinem Primärlicht praktisch nicht beleuchtet.,graphics/icons/markets/darkness.png,32
+Dunkelheit,dark,,TRUE,,com.fs.starfarer.api.impl.campaign.econ.BaseHazardCondition,Die Oberfläche von $market ist dunkel und schattenreich und wird von seinem Primärlicht praktisch nicht beleuchtet.,graphics/icons/markets/darkness.png,32
 ,,,,,,,,
 Meteoriteneinschläge,meteor_impacts,,TRUE,,com.fs.starfarer.api.impl.campaign.econ.BaseHazardCondition,"Diese Welt wird in erschreckendem Tempo von regelmäßigen Meteoritenschauern bombardiert. Jeder menschliche Bewohner, und sei es auch nur vorübergehend, muss ein wachsames Auge auf den Himmel haben. Alle dauerhaften Einrichtungen sollten am besten tief vergraben und gut befestigt werden.",graphics/icons/markets/meteor_impacts.png,33
 ,,,,,,,,
 ,,,,,,,,
-Pollution,pollution,,,,com.fs.starfarer.api.impl.campaign.econ.Pollution,"Die menschliche Industrie hat diese Welt mit Dioxinen, Schwefelverbindungen, Asche und dem ständigen Ticken von zerfallendem radioaktivem Staub überzogen. Plastikfetzen kleben an Scherben von Schaumstoff, der Himmel ist auf einen toten Kanal eingestellt.",graphics/icons/markets/pollution.png,110
+Verschmutzung,pollution,,,,com.fs.starfarer.api.impl.campaign.econ.Pollution,"Die menschliche Industrie hat diese Welt mit Dioxinen, Schwefelverbindungen, Asche und dem ständigen Ticken von zerfallendem radioaktivem Staub überzogen. Plastikfetzen kleben an Scherben von Schaumstoff, der Himmel ist auf einen toten Kanal eingestellt.",graphics/icons/markets/pollution.png,110
 ,,,,,,,,
 ,,,,,,,,
 Spärliche Erzvorkommen,ore_sparse,,TRUE,,com.fs.starfarer.api.impl.campaign.econ.ResourceDepositsCondition,"Hier gibt es einige spärliche Erzvorkommen, die jedoch eher von akademischem als von industriellem Interesse sind, da ihr Abbau kaum wirtschaftlich ist.",graphics/icons/markets/ore_sparse.png,50

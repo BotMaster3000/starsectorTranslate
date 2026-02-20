@@ -1,0 +1,94 @@
+id,name,cost mult,build time,income,upkeep,downgrade,upgrade,tags,data,image,plugin,desc,order,disruptDanger
+population,Bevölkerung und Infrastruktur,,,10,3,,,"population, unraidable, no_saturation_bombardment",,graphics/icons/industry/population.png,com.fs.starfarer.api.impl.campaign.econ.impl.PopulationAndInfrastructure,"Die grundlegende Infrastruktur, die zur Versorgung einer bestimmten Bevölkerung erforderlich ist, von klapprigen Hab-Modulen im Orbit bis hin zu Megastädten und allem, was dazwischen liegt.",100,
+farming,Landwirtschaft,15,60,,1,,,"farming, industry, rural",,graphics/icons/industry/farming.png,com.fs.starfarer.api.impl.campaign.econ.impl.Farming,"Die Landwirtschaft ist ein Gewerbe und eine Technologie, die so alt sind wie die Zivilisation selbst; seit Tausenden von Zyklen macht sich die Menschheit die Kraft natürlicher, veränderter und künstlicher biologischer Maschinen zunutze, um sich zu ernähren. So war es schon immer und so wird es sein, solange es Menschen gibt.",200,LOW
+aquaculture,Aquakultur,50,60,,3,,,"farming, industry, rural",,graphics/icons/industry/aquaculture.png,com.fs.starfarer.api.impl.campaign.econ.impl.Farming,"Die Bewirtschaftung einer Wasserwelt erfordert eine beträchtliche Anfangsinvestition in die Entwicklung geeigneter Arten, doch wenn der Prozess erst einmal in Gang gekommen ist, können Algenfarmen und Fischereien von der Bevölkerung betrieben werden, ohne dass eine spezielle Ausbildung oder Ausrüstung erforderlich ist.",210,MEDIUM
+mining,Bergbau,20,60,,2,,,"mining, industry, industrial",,graphics/icons/industry/mining.png,com.fs.starfarer.api.impl.campaign.econ.impl.Mining,"Metall- und Metalloiderze, organische Stoffe und flüchtige Verbindungen erfordern allesamt schweres Gerät, eine spezielle Infrastruktur und qualifizierte Arbeitskräfte, um sie abzubauen. Die harte Arbeit zieht einen bestimmten Typus an, und eine Verwaltung, die nicht bereit ist, ab und zu wegzusehen, könnte feststellen, dass es ihr an willigem Personal mangelt.",300,MEDIUM
+techmining,Tech-Mining,30,45,,2,,,"techmining, industry, industrial",,graphics/icons/industry/techmining.png,com.fs.starfarer.api.impl.campaign.econ.impl.TechMining,"Techmining ist die bunte Kunst, wertvolle Artefakte aus Domain-Ruinen zu bergen. Man braucht spezielle Werkzeuge, um mit den einzigartigen Gefahren umzugehen, und ein gutes Urteilsvermögen, um zu wissen, wo man nach einer guten Beute suchen muss. Die ältesten Techminer sind ein seltsamer Haufen, der sich an Glücksbringer klammert und sich weigert, ohne ihre Rituale zu arbeiten.",400,MEDIUM
+refining,Raffinerie,45,90,,3,,,"refining, industry, industrial",,graphics/icons/industry/refining.png,com.fs.starfarer.api.impl.campaign.econ.impl.Refining,In den Hüttenwerken werden Erze und transplutonische Erze in Metalle bzw. Transplutonika umgewandelt. Für die gefährlichsten Aufgaben werden in der Regel ferngesteuerte Roboter eingesetzt.,500,MEDIUM
+spaceport,Raumhafen,10,15,,3,,megaport,"spaceport, important, structure",,graphics/icons/industry/spaceport.png,com.fs.starfarer.api.impl.campaign.econ.impl.Spaceport,Einrichtungen zum Be- und Entladen von Fracht und zur Durchführung grundlegender Raumschiffreparaturen. Eine Kolonie ohne einen Raumhafen ist für den interstellaren Handel praktisch unzugänglich.,150,HIGH
+megaport,Megahafen,60,150,,4,spaceport,,"spaceport, structure",,graphics/icons/industry/megaport.png,com.fs.starfarer.api.impl.campaign.econ.impl.Spaceport,"Ein riesiger Sternenhafen, wo die Sterne die Erde berühren können. Reglementierte Landebrücken und gepanzerte Treibstofftanks sind durch Zufahrtsstraßen und Kurzstrecken-Frachtstraßenbahnen miteinander verbunden, die ein Gewirr von Lagerhausbezirken und Logistikterminals versorgen und die Kolonie erheblich besser zugänglich machen.",151,EXTREME
+lightindustry,Leichtindustrie,45,90,,8,,,"lightindustry, industry, rural",,graphics/icons/industry/light_industry.png,com.fs.starfarer.api.impl.campaign.econ.impl.LightIndustry,"Produziert Haushalts- und Luxusgüter. Einer der wenigen Industriezweige, der aufgrund seines Low-Tech-Charakters relativ wenig vom Zusammenbruch betroffen ist.",1400,MEDIUM
+heavyindustry,Schwerindustrie,100,120,,12,,orbitalworks,"heavyindustry, uses_blueprints, industry, industrial",,graphics/icons/industry/heavy_industry.png,com.fs.starfarer.api.impl.campaign.econ.impl.HeavyIndustry,"Zentralisierte Produktionsinfrastruktur für die Herstellung von schweren Industrieanlagen, Versorgungsgütern und Waffen. Kann auch kaum weltraumtaugliche Raumschiffe herstellen; zur Verbesserung der Produktionsqualität kann eine Nanoschmiede installiert werden.",1600,HIGH
+orbitalworks,Orbitalwerke,60,150,,12,heavyindustry,,"heavyindustry, uses_blueprints, industry, industrial",,graphics/icons/industry/orbital_works.png,com.fs.starfarer.api.impl.campaign.econ.impl.HeavyIndustry,"Zentralisierte Produktionsinfrastruktur für die Herstellung von schweren Industrieanlagen, Versorgungsgütern und Waffen. Kann auch kaum weltraumtaugliche Raumschiffe herstellen; zur Verbesserung der Produktionsqualität kann eine Nanoschmiede installiert werden.
+
+Aufgerüstet mit einer orbitalen Komponente, die den Bau von Schiffen weiter vereinfacht und zu weniger Herstellungsfehlern führt.",1700,HIGH
+fuelprod,Kraftstoffproduktion,90,120,,10,,,"fuelprod, industry, industrial",,graphics/icons/industry/fuel_production.png,com.fs.starfarer.api.impl.campaign.econ.impl.FuelProduction,"In dieser Anlage wird Raumschifftreibstoff hergestellt, das Lebenselixier der interstellaren Zivilisation. Da es keine Domain-Technologien gibt, ist die Treibstoffproduktion ein mühsamer und langsamer Prozess.",1800,HIGH
+#advfuelprod,Fortschrittliche Kraftstoffproduktion,120,60,,5,fuelprod,,fuelprod,,graphics/icons/industry/advanced_fuel_production.png,com.fs.starfarer.api.impl.campaign.econ.impl.FuelProduction,"Eine riesige Domain-Anlage produziert Raumschifftreibstoff, das Lebenselixier der interstellaren Zivilisation.",1900,
+commerce,Handel,90,90,,3,,,"industry, urban",,graphics/icons/industry/commerce.png,com.fs.starfarer.api.impl.campaign.econ.impl.TradeCenter,"Vorschriften, Zuschüsse und Infrastruktur zur Förderung eines florierenden unabhängigen Handels. Der Grad der direkten Kontrolle der Verwaltung über die Kolonie wird stark reduziert.",1950,MEDIUM
+station_base,Orbitalstation,,,,,,,"station, parent_item, important, structure",station,graphics/icons/industry/station_category.png,com.fs.starfarer.api.impl.campaign.econ.impl.OrbitalStation,"Eine Raumstation, die in der Lage ist, befreundete Flotten in der Nähe von $marketName zu unterstützen und die reduziert werden muss, bevor ein Bombardement versucht werden kann.
+
+Es sind mehrere Varianten verfügbar, wobei die Unterschiede im Allgemeinen eher in der taktischen Vorgehensweise als in der Gesamtstärke liegen.",2000,
+orbitalstation,Orbitalstation - Low Tech,50,90,,3,,battlestation,"station, sub_item, unraidable, structure","{
+radius:55,
+variant:station1_Standard,
+fleetName:Orbital Station,
+}",graphics/icons/industry/orbital_station.png,com.fs.starfarer.api.impl.campaign.econ.impl.OrbitalStation,"Eine Low-Tech-Raumstation mit schwerer Panzerung und mittlerer Feuerkraft.
+
+Muss reduziert werden, bevor ein Bombardement versucht werden kann.",2010,
+battlestation,Gefechtsstation - Low Tech,100,120,,4,orbitalstation,starfortress,"station, battlestation, unraidable, structure","{
+radius:65,
+variant:station2_Standard,
+fleetName:Battlestation,
+}",graphics/icons/industry/battlestation.png,com.fs.starfarer.api.impl.campaign.econ.impl.OrbitalStation,"Eine Raumstation, die mit einer schweren Bastion und Zitadellen zur Punktverteidigung ausgestattet ist.
+
+Muss reduziert werden, bevor ein Bombardement versucht werden kann.",2020,
+starfortress,Sternenfestung - Low Tech,200,180,,5,battlestation,,"station, starfortress, unraidable, structure","{
+radius:70,
+variant:station3_Standard,
+fleetName:Star Fortress
+}",graphics/icons/industry/star_fortress.png,com.fs.starfarer.api.impl.campaign.econ.impl.OrbitalStation,"Eine hochgerüstete Kampfstation mit Verteidigungsdrohnen der Merlon-Klasse und einem ausgedehnten Minenfeld.
+
+Muss reduziert werden, bevor ein Bombardement versucht werden kann.",2030,
+orbitalstation_mid,Orbitalstation - Mittellinie,50,90,,3,,battlestation_mid,"station, sub_item, unraidable, structure","{
+radius:55,
+variant:station1_midline_Standard,
+fleetName:Orbital Station,
+}",graphics/icons/industry/orbital_station.png,com.fs.starfarer.api.impl.campaign.econ.impl.OrbitalStation,"Mittlere Raumstation mit starker Feuerkraft auf einer Seite und schneller Achsendrehung.
+
+Muss reduziert werden, bevor ein Bombardement versucht werden kann.",2040,
+battlestation_mid,Gefechtsstation - Mittellinie,100,120,,4,orbitalstation_mid,starfortress_mid,"station, battlestation, unraidable, structure","{
+radius:65,
+variant:station2_midline_Standard,
+fleetName:Battlestation,
+}",graphics/icons/industry/battlestation.png,com.fs.starfarer.api.impl.campaign.econ.impl.OrbitalStation,"Eine Raumstation, die mit Modulen zur Unterstützung von Raketen erweitert wurde.
+
+Muss reduziert werden, bevor ein Bombardement versucht werden kann.",2050,
+starfortress_mid,Sternenfestung - Mittellinie,200,180,,5,battlestation_mid,,"station, starfortress, unraidable, structure","{
+radius:70,
+variant:station3_midline_Standard,
+fleetName:Star Fortress
+}",graphics/icons/industry/star_fortress.png,com.fs.starfarer.api.impl.campaign.econ.impl.OrbitalStation,"Eine hochgerüstete Kampfstation mit Verteidigungsdrohnen der Ravelin-Klasse und einem ausgedehnten Minenfeld.
+
+Muss reduziert werden, bevor ein Bombardement versucht werden kann.",2060,
+orbitalstation_high,Orbitalstation - Hochtechnologie,50,90,,3,,battlestation_high,"station, sub_item, unraidable, structure","{
+radius:55,
+variant:station1_hightech_Standard,
+fleetName:Orbital Station,
+}",graphics/icons/industry/orbital_station.png,com.fs.starfarer.api.impl.campaign.econ.impl.OrbitalStation,"Eine Hightech-Raumstation mit schweren, rotierenden Schilden, einem Jägerteam und mittlerer Feuerkraft.
+
+Muss reduziert werden, bevor ein Bombardement versucht werden kann.",2070,
+battlestation_high,Gefechtsstation - Hightech,100,120,,4,orbitalstation_high,starfortress_high,"station, battlestation, unraidable, structure","{
+radius:65,
+variant:station2_hightech_Standard,
+fleetName:Battlestation,
+}",graphics/icons/industry/battlestation.png,com.fs.starfarer.api.impl.campaign.econ.impl.OrbitalStation,"Eine Raumstation, die mit einer Verteidigungszitadelle mit schwerer Feuerkraft ausgestattet ist.
+
+Muss reduziert werden, bevor ein Bombardement versucht werden kann.",2080,
+starfortress_high,Sternenfestung - Hightech,200,180,,5,battlestation_high,,"station, starfortress, unraidable, structure","{
+radius:70,
+variant:station3_hightech_Standard,
+fleetName:Star Fortress
+}",graphics/icons/industry/star_fortress.png,com.fs.starfarer.api.impl.campaign.econ.impl.OrbitalStation,"Eine aufgerüstete Kampfstation mit Verteidigungsdrohnen der Gargoyle-Klasse und gezielten Minenteleportern für große Entfernungen.
+
+Muss reduziert werden, bevor ein Bombardement versucht werden kann.",2090,
+grounddefenses,Bodenverteidigung,30,60,,2,,heavybatteries,"grounddefenses, unraidable, tactical_bombardment, structure",,graphics/icons/industry/ground_defenses.png,com.fs.starfarer.api.impl.campaign.econ.impl.GroundDefenses,"Ein verstreutes, halbautonomes Netz kleiner, versteckter Waffenanlagen, das die Aussicht auf einen direkten Bodenangriff und selbst einfache Überfälle für den Angreifer extrem kostspielig macht. Nur ein überwältigendes orbitales Bombardement oder eine massiv unverhältnismäßige aktive Abschirmung kann diese Verteidigungsanlagen ausschalten.",2200,
+heavybatteries,Schwere Batterien,60,90,,3,grounddefenses,,"grounddefenses, unraidable, tactical_bombardment, structure",,graphics/icons/industry/heavy_batteries.png,com.fs.starfarer.api.impl.campaign.econ.impl.GroundDefenses,"Gepanzerte unterirdische Batterien ergänzen ein verstreutes Netz kleiner, versteckter Waffenanlagen. Die bodengestützten Batterien verfügen über eine wirklich beeindruckende Feuerkraft, die sich allerdings nur dadurch bemerkbar macht, dass sie Bodenoperationen erschwert, da kein Raumschiffkapitän so töricht wäre, sich in ihren Schussbereich zu begeben.",2300,
+patrolhq,Hauptquartier der Patrouille,60,60,,8,,militarybase,"patrol, unraidable, tactical_bombardment, structure",,graphics/icons/industry/patrol_hq.png,com.fs.starfarer.api.impl.campaign.econ.impl.MilitaryBase,"Die erforderlichen Hangars, Wartungshallen, Kommandozentralen, Kasernen und logistischen Abläufe, die erforderlich sind, um die Streitkräfte in einem ganzen Sternensystem einzusetzen. Einmal eingerichtet, werden militarisierte Patrouillen Piraten jagen und befreundete Konvois schützen.",2400,
+militarybase,Militärbasis,90,120,,10,patrolhq,highcommand,"military, unraidable, tactical_bombardment, industry",,graphics/icons/industry/military_base.png,com.fs.starfarer.api.impl.campaign.econ.impl.MilitaryBase,"Diese Einrichtungen ermöglichen die Verlegung von Streitkräften zwischen Sternensystemen. Jedes derartige militärische Unterfangen ist eine gewaltige logistische Operation, die die Koordination von Dutzenden, vielleicht Hunderten von Raumschiffen und Tausenden von Offizieren, Mannschaften und Soldaten erfordert.",2500,
+highcommand,Oberkommando,30,120,,14,militarybase,,"command, unraidable, tactical_bombardment, industry",,graphics/icons/industry/high_command.png,com.fs.starfarer.api.impl.campaign.econ.impl.MilitaryBase,"Ein transtellares Imperium ist nur durch ein außergewöhnliches Korps von Offizieren und Bürokraten möglich, denen die Autorität über die Ressourcen ganzer Sternensysteme übertragen wird. Ein etabliertes Oberkommando ermöglicht die Organisation und Durchführung militärischer Operationen im gesamten Sektor.",2600,
+lionsguard,Lion's Guard HQ,90,60,,6,,,"military, unraidable, tactical_bombardment, structure, codex_unlockable",,graphics/icons/industry/lions_guard.png,com.fs.starfarer.api.impl.campaign.econ.impl.LionsGuardHQ,"Hauptquartier der gefürchteten Leibgarde von Phillip ""Der Löwe von Sindria"" Andrada. Die fanatische Loyalität der Garde wird durch ein System von Vergünstigungen und Anreizen aufrechterhalten, die die Garde sowohl aufwerten als auch vom regulären Militär des Diktats isolieren.",2650,
+planetaryshield,Planetarischer Schutzschild,150,90,,3,,,"grounddefenses, structure, codex_unlockable",,graphics/icons/industry/planetary_shield.png,com.fs.starfarer.api.impl.campaign.econ.impl.PlanetaryShield,"Eine Hülle aus geladenem Plasma, die mit exotischen virtuellen Partikeln angereichert ist und Effekte hervorruft, die die Kampfkraft von Langstreckenbombardements und sogar das Eindringen von kleinen Schiffen stören. Der planetarische Schild kann kontinuierlich aufgeladen und von einer zentralen Quelle gesteuert werden und stellt ein gewaltiges Hindernis für jede Art von Bodenangriff dar.",2700,EXTREME
+waystation,Versorgungsstation,20,60,,2,,,"waystation, structure",,graphics/icons/industry/waystation.png,com.fs.starfarer.api.impl.campaign.econ.impl.Waystation,Ein Versorgungs- und Wartungsdepot für interstellare Flotten. Erhöht die Zugänglichkeit einer Kolonie.,155,MEDIUM
+cryosanctum,Cryosanctum,150,90,,5,,,"cryosanctum, structure, codex_unlockable",,graphics/icons/industry/cryosanctum.png,com.fs.starfarer.api.impl.campaign.econ.impl.Cryosanctum,"Ein riesiges, grabähnliches Gewölbe, das gebaut wurde, um diejenigen aufzubewahren, die den Kryoschlaf riskieren wollen, um diese Zeit der Schwierigkeiten zu überstehen und in einem vermutlich zivilisierteren Zeitalter zu erwachen. Die Kryopods selbst sind unbedeutend im Vergleich zu der vielfach redundanten Infrastruktur, den massiven automatischen Sicherheitssystemen und den Schiffsabwehrbatterien, die alle in einem verzweigten unterirdischen Festungslabyrinth untergebracht sind.",3000,EXTREME
+,,,,,,,,,,,,,,
+cryorevival,Kryorevival-Einrichtung,60,60,,5,,,"cryorevival, structure, codex_unlockable",,graphics/icons/industry/cryorevival.png,com.fs.starfarer.api.impl.campaign.econ.impl.Cryorevival,Die notwendigen Einrichtungen für die Massenbelebung und Assimilation der Passagiere eines Kryo-Schiffes der Domain-Ära. Erhöht das Bevölkerungswachstum erheblich.,3200,MEDIUM

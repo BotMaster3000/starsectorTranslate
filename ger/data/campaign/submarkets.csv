@@ -1,0 +1,23 @@
+id,name,faction,desc,script,icon,order
+open_market,"Offener
+Markt",,"Der offene Markt. Hier dürfen nur legale Waren gehandelt werden, und die Transaktionen unterliegen Zöllen. Wenn die Stabilität hoch ist, sind mehr Waren verfügbar.
+
+Wenn Sie genug von einer Ware verkaufen, kann ein Mangel vorübergehend behoben werden.",com.fs.starfarer.api.impl.campaign.submarkets.OpenMarketPlugin,,0
+black_market,"Schwarz
+markt",pirates,"Der Schwarzmarkt. Alles und jedes kann gekauft oder verkauft werden, und es gibt keine Zölle. Wenn die Stabilität niedrig ist, sind mehr Waren verfügbar.
+
+Wenn man genug von einer Ware verkauft, wird ein Mangel vorübergehend behoben.
+
+Schwarzmarkttransaktionen können die Aufmerksamkeit der Behörden auf sich ziehen, was zu einer Durchsuchung der Ladung und einer Verringerung des Ansehens der Fraktion führt, es sei denn, der Handel wird mit ausgeschaltetem Transponder durchgeführt.
+
+Die Teilnahme am legalen Handel als ""Tarnung"" verringert ebenfalls die Wahrscheinlichkeit, die Aufmerksamkeit der Behörden auf sich zu ziehen.",com.fs.starfarer.api.impl.campaign.submarkets.BlackMarketPlugin,graphics/factions/black_market.png,999
+storage,Lager,player,Lagerraum für Schiffe und Fracht.,com.fs.starfarer.api.impl.campaign.submarkets.StoragePlugin,graphics/factions/storage.png,1000
+generic_military,,,"Handel mit der Militärbasis $theFaction
+
+Hier können Waffen und andere militärische Güter gekauft und verkauft werden, auch wenn sie auf dem freien Markt illegal sind. Eine Provision und ein besseres Ansehen bei $theFaction führt dazu, dass höherwertige Hardware erhältlich ist.
+
+Kauft vor Ort illegale Waren im Rahmen eines Rückkaufprogramms auf, bei dem keine Fragen gestellt werden.
+
+Wenn Sie genug von einer Ware verkaufen, wird ein Mangel vorübergehend behoben.",com.fs.starfarer.api.impl.campaign.submarkets.MilitarySubmarketPlugin,,100
+local_resources,"Lokale
+Vorräte",,,com.fs.starfarer.api.impl.campaign.submarkets.LocalResourcesSubmarketPlugin,,200
