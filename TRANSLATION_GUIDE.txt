@@ -161,19 +161,19 @@ After translation:
 
 Common MT artifacts to catch and fix:
 - Placeholder grammar corruption around variables:
-  - Bad: "Das $enemyFactionAndTheirAllies-Manoever ..."
-  - Good: "$enemyFactionAndTheirAllies manoevrieren ..."
+  - Bad: "Das $enemyFactionAndTheirAllies-Manöver ..."
+  - Good: "$enemyFactionAndTheirAllies manövrieren ..."
 - Idioms translated too literally:
   - Prefer "das Blatt wenden" in combat text instead of literal forms.
 - Domain term drift:
   - Use "Treibstoff", not "Benzin", for fleet fuel.
   - Keep "Administrator" terminology consistent.
-  - Keep crew quality labels consistent (e.g. "Regulaer").
+  - Keep crew quality labels consistent (e.g. "Regulär").
 - Punctuation around placeholders:
   - Remove accidental doubled periods and stray punctuation near $tokens.
   - Example bad patterns: "$enemyFactionAndTheirAllies..", "$enemyFactionAndTheirAllies. ..."
 - Awkward literal machine phrases:
-  - Replace unnatural words like "Auskuppeln" in fleet disengage context with "sich loesen" / "Rueckzug".
+  - Replace unnatural words like "Auskuppeln" in fleet disengage context with "sich lösen" / "Rückzug".
 
 Post-MT QA checklist (required):
 1. Run regex checks for punctuation artifacts:
