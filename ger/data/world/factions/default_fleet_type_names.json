@@ -2,7 +2,7 @@
 	"trade":"Handelskonvoi",
 	"tradeLiner":"Passagierkonvoi",
 	"tradeSmuggler":"Schmuggler",
-	"smallTrader":"Haendler",
+	"smallTrader":"Händler",
 	
 	"patrolSmall":"Schnelles Vorpostenschiff",
 	"patrolMedium":"Patrouille",
@@ -12,10 +12,10 @@
 	"leagueArmada":"Grossarmada",
 	"supplyFleet":"Versorgungsflotte",
 	
-	"commerceRaiders":"Handelsraeuber",
-	"raider":"Raeuber",
+	"commerceRaiders":"Handelsräuber",
+	"raider":"Räuber",
 	
-	"sacredProtectors":"Heilige Beschuetzer",
+	"sacredProtectors":"Heilige Beschützer",
 	
 	"investigators":"Ermittler",
 	
@@ -23,7 +23,7 @@
 	"taskForce":"Einsatzgruppe",
 	
 	"scavengerSmall":"Prospektor",
-	"scavengerMedium":"Pluenderer",
+	"scavengerMedium":"Plünderer",
 	"scavengerLarge":"Bergungsflotte",
 	
 	"foodReliefFleet":"Hilfskonvoi",
@@ -31,11 +31,11 @@
 	"shrinePilgrims":"Luddische Pilger",
 	"academyFleet":"Akademie-Shuttledienst",
 	
-	"mercScout":"Soeldneraufklaerer",
-	"mercBountyHunter":"Kopfgeldjaeger",
+	"mercScout":"Söldneraufklärer",
+	"mercBountyHunter":"Kopfgeldjäger",
 	"mercPrivateer":"Kaperfahrer",
-	"mercPatrol":"Soeldnerpatrouille",
-	"mercArmada":"Soeldnerkompanie",
+	"mercPatrol":"Söldnerpatrouille",
+	"mercArmada":"Söldnerkompanie",
 	
 	"battlestation":"Kampfstation",
 	

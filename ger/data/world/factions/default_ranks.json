@@ -7,28 +7,28 @@
 	
 		"spaceSailor":{"name":"Raumfahrer"},
 		"spaceChief":{"name":"Leitender Offizier"},
-		"spaceEnsign":{"name":"Faehnrich"},
+		"spaceEnsign":{"name":"Fähnrich"},
 		"spaceLieutenant":{"name":"Leutnant"},
 		"spaceCommander":{"name":"Kommandant"},
-		"spaceCaptain":{"name":"Kapitaen"},
+		"spaceCaptain":{"name":"Kapitän"},
 		"spaceAdmiral":{"name":"Admiral"},
 		"spaceMarshal":{"name":"Raummarschall"},
 		
 		"groundPrivate":{"name":"Gefreiter"},
 		"groundSergeant":{"name":"Sergeant"},
 		"groundLieutenant":{"name":"Leutnant"},
-		"groundCaptain":{"name":"Kapitaen"},
+		"groundCaptain":{"name":"Kapitän"},
 		"groundMajor":{"name":"Major"},
 		"groundColonel":{"name":"Oberst"},
 		"groundGeneral":{"name":"General"},
 		
-		"knightCaptain":{"name":"Ritter-Kapitaen"},
+		"knightCaptain":{"name":"Ritter-Kapitän"},
 		
 		"chiefHighInspector":{"name":"Oberster Hauptinspektor"},
 		"deputyStarMarshal":{"name":"Stellvertretender Sternmarschall"},
 		"guardHighDeputyExecutor":{"name":"Hoher Vizevollstrecker der Garde"},
 		
-		"citizen":{"name":"Buerger"},
+		"citizen":{"name":"Bürger"},
 		"executive":{"name":"Direktor"},
 		"seniorExecutive":{"name":"Senior-Direktor"},
 		"agent":{"name":"Agent"},
@@ -41,10 +41,10 @@
 		"sister":{name:"Schwester"},
 		"father":{name:"Vater"},
 		"mother":{name:"Mutter"},
-		"elder":{name:"Aeltester"},
+		"elder":{name:"Ältester"},
 		"aristocrat":{name:"Aristokrat"},
 		"terrorist":{name:"Terrorist"},
-		"freedomFighter":{name:"Freiheitskaempfer"},
+		"freedomFighter":{name:"Freiheitskämpfer"},
 		"clone":{name:"Klon"},
 		
 	},
@@ -60,19 +60,19 @@
 		"outpostCommander":{"name":"Aussenposten-Kommandant"},
 		"portmaster":{"name":"Hafenmeister"},
 		
-		"intelligenceDirector":{"name":"Direktor der Aufklaerung"},
-		"guardLeader":{"name":"Direktor der Spezialkraefte"},
+		"intelligenceDirector":{"name":"Direktor der Aufklärung"},
+		"guardLeader":{"name":"Direktor der Spezialkräfte"},
 		
 		"supplyOfficer":{"name":"Quartiermeister"},
 		"supplyManager":{"name":"Versorgungsleiter"},
 		"medicalSupplier":{"name":"Medizinischer Versorger"},
 		
 		"administrator":{"name":"Administrator"},
-		"militaryAdministrator":{"name":"Militaergouverneur"},
+		"militaryAdministrator":{"name":"Militärgouverneur"},
 		"freeAdmin":{"name":"Freier Administrator"},
 		
 		"guildMaster":{"name":"Gildenmeister"},
-		"communeLeader":{"name":"Kommunenfuehrer"},
+		"communeLeader":{"name":"Kommunenführer"},
 		"executive":{"name":"Direktor"},
 		"seniorExecutive":{"name":"Senior-Direktor"},
 		"minorCriminal":{"name":"Kleinkrimineller"},
@@ -82,7 +82,7 @@
 		"genericMilitary":{"name":"Kommandant"},
 		"marineSquadLeader":{"name":"Sergeant"},
 		
-		"trader":{"name":"Haendler"},
+		"trader":{"name":"Händler"},
 		"merchant":{"name":"Kaufmann"},
 		"investor":{"name":"Investor"},
 		"commodities_agent":{"name":"Warenagent"},
@@ -93,14 +93,14 @@
 		"gangster":{"name":"Gangster"},
 		"smuggler":{"name":"Schmuggler"},
 		"fence":{"name":"Hehler"},
-		"armsDealer":{"name":"Waffenhaendler"},
+		"armsDealer":{"name":"Waffenhändler"},
 		
 		
-		"citizen":{"name":"Buerger"},
+		"citizen":{"name":"Bürger"},
 		"boss":{"name":"Boss"},
 		"crewBoss":{"name":"Crew-Chef"},
 		
-		"mercenary":{"name":"Soeldneroffizier"},
+		"mercenary":{"name":"Söldneroffizier"},
 		"officer":{"name":"Offizier"},
 		"officer_for_hire":{"name":"Offizier (anheuerbar)"}, 
 		
@@ -127,7 +127,7 @@
 		"synodSubcurate":{name:"Synoden-Subkurat"},
 		"subcurate":{name:"Subkurat"},
 		"archcurate":{name:"Archkurat"},
-		"heretic":{name:"Haeretiker"},
+		"heretic":{name:"Häretiker"},
 		"shrinePriest":{name:"Kurat Sacraria"},
 		"excubitorOrbis":{"name":"Excubitor Orbis"},
 		"initiate":{"name":"Novize"},

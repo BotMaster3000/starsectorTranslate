@@ -54,7 +54,7 @@
 		"shortType":"Intel",
 	},
 	"player_comm_sniffer":{
-		"name":"Kommschnueffler-Programm",
+		"name":"Kommschnüffler-Programm",
 		"logo":"graphics/icons/intel/player_comm_sniffer.png",
 		"icon":"graphics/icons/intel/player_comm_sniffer.png",
 		"image":"graphics/factions/player_flag.png",

@@ -10,7 +10,7 @@
 		},
 		"damage_fragmentation":{
 			"title":"Splitterschaden",
-			"body":"Splitterschaden ist gegen Panzerung und Schilde sehr schwach. Waffen mit Splitterschaden haben jedoch meist sehr hohen DPS und sind dadurch verheerend gegen leicht gepanzerte, ungeschirmte Ziele wie leichte Jaeger und Raketen.\n\nEr ist auch sehr effektiv gegen Schiffe, deren Panzerung im Kampf bereits aufgerieben wurde.",
+			"body":"Splitterschaden ist gegen Panzerung und Schilde sehr schwach. Waffen mit Splitterschaden haben jedoch meist sehr hohen DPS und sind dadurch verheerend gegen leicht gepanzerte, ungeschirmte Ziele wie leichte Jäger und Raketen.\n\nEr ist auch sehr effektiv gegen Schiffe, deren Panzerung im Kampf bereits aufgerieben wurde.",
 		}, 
 		"damage_energy":{
 			"title":"Energieschaden",
@@ -38,13 +38,13 @@
 			"title":"Fortsetzen",
 			"body":"Setzt das Spiel fort.",
 		},
-		"combatTime":"Vergangene Zeit, waehrend beide Flotten Kontakt miteinander haben.\n\nDie Spitzenleistungszeit von Verstaerkungen wird um die Haelfte dieser Kampfzeit reduziert.",
+		"combatTime":"Vergangene Zeit, während beide Flotten Kontakt miteinander haben.\n\nDie Spitzenleistungszeit von Verstärkungen wird um die Hälfte dieser Kampfzeit reduziert.",
 	},
 	
 	"fleetScreen":{
 		"tooltipCaptain":{
-			"title":"Kapitaen zuweisen",
-			"body":"Weise diesem Schiff einen Kapitaen zu (dich selbst oder einen Offizier). Das Schiff profitiert dann von den Skills des Kapitaens.",
+			"title":"Kapitän zuweisen",
+			"body":"Weise diesem Schiff einen Kapitän zu (dich selbst oder einen Offizier). Das Schiff profitiert dann von den Skills des Kapitäns.",
 		},
 		"tooltipAdmin":{
 			"title":"Administrator zuweisen",
@@ -56,11 +56,11 @@
 		},
 		"tooltipBuy":{
 			"title":"Kaufen",
-			"body":"Kaufe dieses %s fuer %d Credits.",
+			"body":"Kaufe dieses %s für %d Credits.",
 		},
 		"tooltipSell":{
 			"title":"Verkaufen",
-			"body":"Verkaufe dieses %s fuer %d Credits.",
+			"body":"Verkaufe dieses %s für %d Credits.",
 		},
 		"tooltipTake":{
 			"title":"Nehmen",
@@ -68,15 +68,15 @@
 		},
 		"tooltipGive":{
 			"title":"Einlagern",
-			"body":"Uebertrage dieses %s aus deiner Flotte. Die Kampfbereitschaft bleibt waehrend der Lagerung unveraendert.",
+			"body":"Übertrage dieses %s aus deiner Flotte. Die Kampfbereitschaft bleibt während der Lagerung unverändert.",
 		},
 		"tooltipMothball":{
 			"title":"Einmotten",
-			"body":"Eingemottete %ss koennen nicht im Kampf eingesetzt oder repariert werden und bieten keine Treibstoff-, Fracht- oder Personal-Kapazitaet.\n\nDas Einmotten setzt die Kampfbereitschaft auf null. Zur Wiederherstellung werden Zeit und Vorrate benoetigt.",
+			"body":"Eingemottete %ss können nicht im Kampf eingesetzt oder repariert werden und bieten keine Treibstoff-, Fracht- oder Personal-Kapazität.\n\nDas Einmotten setzt die Kampfbereitschaft auf null. Zur Wiederherstellung werden Zeit und Vorrate benötigt.",
 		},
 		"tooltipUnmothball":{
 			"title":"Einmotten",
-			"body":"Eingemottete %ss koennen nicht im Kampf eingesetzt oder repariert werden und bieten keine Treibstoff-, Fracht- oder Personal-Kapazitaet.\n\nDie Wiederherstellung der Kampfbereitschaft dieses Schiffs nach dem Ausmotten verbraucht %s Vorrate ueber %s Tag(e).",
+			"body":"Eingemottete %ss können nicht im Kampf eingesetzt oder repariert werden und bieten keine Treibstoff-, Fracht- oder Personal-Kapazität.\n\nDie Wiederherstellung der Kampfbereitschaft dieses Schiffs nach dem Ausmotten verbraucht %s Vorrate über %s Tag(e).",
 		},
 		"tooltipScuttle":{
 			"title":"Verschrotten",
@@ -84,35 +84,35 @@
 		},
 		"tooltipSuspendRepairs":{
 			"title":"Reparatur und Erholung aussetzen",
-			"body":"Verhindert, dass dieses %s Reparaturen durchfuehrt oder Kampfbereitschaft wiederherstellt. Vollstaendige Reparaturen und CR-Erholung verbrauchen ungefaehr %s Vorrate ueber %s Tage, falls fortgesetzt.",
+			"body":"Verhindert, dass dieses %s Reparaturen durchführt oder Kampfbereitschaft wiederherstellt. Vollständige Reparaturen und CR-Erholung verbrauchen ungefähr %s Vorrate über %s Tage, falls fortgesetzt.",
 		},
 		"tooltipSuspendRepairsNotNeeded":{
 			"title":"Reparatur und Erholung aussetzen",
-			"body":"Verhindert, dass dieses %s Reparaturen durchfuehrt oder Kampfbereitschaft wiederherstellt. Dieses %s benoetigt derzeit weder Reparaturen noch CR-Erholung.",
+			"body":"Verhindert, dass dieses %s Reparaturen durchführt oder Kampfbereitschaft wiederherstellt. Dieses %s benötigt derzeit weder Reparaturen noch CR-Erholung.",
 		},
 		"tooltipRefit":{
-			"title":"Umruesten",
-			"body":"Aendere die Waffen und Hullmods auf diesem Schiff.",
+			"title":"Umrüsten",
+			"body":"Ändere die Waffen und Hullmods auf diesem Schiff.",
 		},
 		"tooltipLogisticalPriority":{
-			"title":"Logistische Prioritaet",
-			"body":"%ss mit logistischer Prioritaet erhalten zuerst verfuegbare Crew und Vorrate fuer Reparaturen.",
+			"title":"Logistische Priorität",
+			"body":"%ss mit logistischer Priorität erhalten zürst verfügbare Crew und Vorrate für Reparaturen.",
 		},
 		"tooltipCrewElite":{
 			"title":"Elite",
-			"body":"Besetze dieses %s mit dem bestmoeglichen Personal.",
+			"body":"Besetze dieses %s mit dem bestmöglichen Personal.",
 		},
 		"tooltipCrewVeteran":{
 			"title":"Veteran",
-			"body":"Besetze dieses %s nach Moeglichkeit nur mit Veteranen-Crew oder darunter.", 
+			"body":"Besetze dieses %s nach Möglichkeit nur mit Veteranen-Crew oder darunter.", 
 		},
 		"tooltipCrewRegular":{
-			"title":"Regulaer",
-			"body":"Besetze dieses %s nach Moeglichkeit nur mit regulaerer Crew oder darunter.",
+			"title":"Regulär",
+			"body":"Besetze dieses %s nach Möglichkeit nur mit regulärer Crew oder darunter.",
 		},
 		"tooltipCrewGreen":{
 			"title":"Unerfahren",
-			"body":"Besetze dieses %s nach Moeglichkeit nur mit unerfahrener Crew.",
+			"body":"Besetze dieses %s nach Möglichkeit nur mit unerfahrener Crew.",
 		},
 		"tooltipCrewBar":{
 			"title":"",
@@ -121,14 +121,14 @@
 	},
 	"logistics":{
 		"marines":"Anzahl der Marines in der Flotte.",
-		"crew":"Anzahl der Crew in der Flotte und die Anzahl, die noetig ist, um die Mindestanforderungen aller Schiffe zu erfuellen.",
-		"supplies":"Verfuegbare Vorrate und Vorratsverbrauch pro Tag.",
+		"crew":"Anzahl der Crew in der Flotte und die Anzahl, die nötig ist, um die Mindestanforderungen aller Schiffe zu erfüllen.",
+		"supplies":"Verfügbare Vorrate und Vorratsverbrauch pro Tag.",
 		"credits":"Verfügbare Credits.",
 	},
 	"misc":{
-		"jumpPointNormal":"Sprungpunkte koennen fuer den Transit zwischen Hyperraum und Normalraum genutzt werden. Einige Sprungpunkte fuehren auch zu weiteren Zielen.",
-		"jumpPointStar":"Der Gravitationsbrunnen eines Sterns ist tief genug, um einen einseitigen Austritt aus dem Hyperraum zu erlauben. Die Nutzung ist jedoch extrem schwierig und gefaehrlich.",
-		"jumpPointGasGiant":"Der Gravitationsbrunnen eines Gasriesen ist haeufig tief genug, um einen einseitigen Austritt aus dem Hyperraum zu erlauben.",
+		"jumpPointNormal":"Sprungpunkte können für den Transit zwischen Hyperraum und Normalraum genutzt werden. Einige Sprungpunkte führen auch zu weiteren Zielen.",
+		"jumpPointStar":"Der Gravitationsbrunnen eines Sterns ist tief genug, um einen einseitigen Austritt aus dem Hyperraum zu erlauben. Die Nutzung ist jedoch extrem schwierig und gefährlich.",
+		"jumpPointGasGiant":"Der Gravitationsbrunnen eines Gasriesen ist häufig tief genug, um einen einseitigen Austritt aus dem Hyperraum zu erlauben.",
 	},
 	
 }

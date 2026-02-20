@@ -30,13 +30,13 @@
 		# $enemyFactionAndTheirAllies "Hegemony forces and their allies"
 		# $yourForcesWereOrYourSideWas	 
 	
-		"initialWithStationVsLargeFleet":"Die $faction-$fleetOrShip manoevriert so, dass sie von der Station gedeckt bleibt und deine Flotte sich loesen kann. Beim Rueckzug ist jedoch mit Angriffen auf deine Kraefte zu rechnen.",
-		"initialAggressive":"Die $faction-$fleetOrShip manoevriert, um dir das Loesen vom Gefecht zu erschweren.",
-		"initialDisengage":"Die $faction-$fleetOrShip versucht, sich zu loesen.",
-		"initialCareful":"Die $faction-$fleetOrShip haelt vorsichtig Abstand und bleibt bereit, sich bei Feindseligkeiten zu loesen.",
+		"initialWithStationVsLargeFleet":"Die $faction-$fleetOrShip manövriert so, dass sie von der Station gedeckt bleibt und deine Flotte sich lösen kann. Beim Rückzug ist jedoch mit Angriffen auf deine Kräfte zu rechnen.",
+		"initialAggressive":"Die $faction-$fleetOrShip manövriert, um dir das Lösen vom Gefecht zu erschweren.",
+		"initialDisengage":"Die $faction-$fleetOrShip versucht, sich zu lösen.",
+		"initialCareful":"Die $faction-$fleetOrShip hält vorsichtig Abstand und bleibt bereit, sich bei Feindseligkeiten zu lösen.",
 		"initialNeutral":"Die $faction-$fleetOrShip nimmt eine neutrale Haltung ein.",
 		"initialHoldVsStrongerEnemy":"Der $faction $fleetOrShip scheint trotz der Übermacht des Gegners kampfbereit zu sein, wird aber wahrscheinlich nicht weiter darauf bestehen.",
-		"initialAggressiveSide":"$enemyFactionAndTheirAllies manoevrieren, um dir das Loesen vom Gefecht zu erschweren.",
+		"initialAggressiveSide":"$enemyFactionAndTheirAllies manövrieren, um dir das Lösen vom Gefecht zu erschweren.",
 		"initialDisengageSide":"Die $enemyFactionAndTheirAllies versuchen, sich zu lösen.",
 		"initialCarefulSide":"Die $enemyFactionAndTheirAllies halten sorgfältig Abstand und sind bereit, sich im Falle von Feindseligkeiten zurückzuziehen.",
 		"initialNeutralSide":"Der $enemyFactionAndTheirAllies nimmt eine neutrale Haltung ein.",
@@ -54,30 +54,30 @@
 		"battleDefeat":"$yourForcesWereOrYourSideWas im letzten Gefecht besiegt.",
 		"battleTotalDefeat":"$yourForcesWereOrYourSideWas im letzten Gefecht vernichtend geschlagen.",
 		"battleVictory":"$yourForcesWereOrYourSideWas im letzten Gefecht siegreich.",
-		"battleTotalVictory":"$yourForcesWereOrYourSideWas konnte im letzten Gefecht einen vollstaendigen Sieg erringen.",
-		"battleFleetLost":"Alle deine Schiffe wurden im letzten Gefecht zerstoert.",
+		"battleTotalVictory":"$yourForcesWereOrYourSideWas konnte im letzten Gefecht einen vollständigen Sieg erringen.",
+		"battleFleetLost":"Alle deine Schiffe wurden im letzten Gefecht zerstört.",
 		
 		"friendlyFireRepLoss":"Im Verlauf des Gefechts kam es zu mehreren schweren Vorfällen von Eigenbeschuss.",
 		
-		"pursuitAutoresolve":"Deine Kraefte nehmen wie befohlen die Verfolgung auf.",
-		"pursuitVictoryNoLosses":"Die abziehenden Feindkraefte konnten sich loesen, ohne Schiffe zu verlieren.",
-		"pursuitVictoryLosses":"Die abziehenden Feindkraefte konnten sich loesen, jedoch nicht ohne Verluste.",
+		"pursuitAutoresolve":"Deine Kräfte nehmen wie befohlen die Verfolgung auf.",
+		"pursuitVictoryNoLosses":"Die abziehenden Feindkräfte konnten sich lösen, ohne Schiffe zu verlieren.",
+		"pursuitVictoryLosses":"Die abziehenden Feindkräfte konnten sich lösen, jedoch nicht ohne Verluste.",
 		"pursuitTotalVictory":"Kein feindliches Schiff konnte entkommen.",
 		"pursuitDefeat":"Die feindlichen Truppen konnten das Blatt wenden und Ihren Truppen eine Niederlage zufügen.",
 		"pursuitTotalDefeat":"In einer überraschenden Wendung gelang es den sich zurückziehenden feindlichen Truppen, das Blatt zu wenden und einen vernichtenden Sieg zu erringen.",
 		
-		"escapeDefeat":"$yourForcesWereOrYourSideWas konnten sich vom Feind loesen.",
+		"escapeDefeat":"$yourForcesWereOrYourSideWas konnten sich vom Feind lösen.",
 		"escapeTotalDefeat":"Keines der Schiffe deiner Seite konnte entkommen.",
-		"escapeVictory":"$yourForcesWereOrYourSideWas konnten das Blatt gegen den verfolgenden Feind wenden und ihm eine Niederlage zufuegen.",
-		"escapeTotalVictory":"$yourForcesWereOrYourSideWas konnten das Blatt gegen den verfolgenden Feind wenden und ihn vollstaendig vernichten.",
+		"escapeVictory":"$yourForcesWereOrYourSideWas konnten das Blatt gegen den verfolgenden Feind wenden und ihm eine Niederlage zufügen.",
+		"escapeTotalVictory":"$yourForcesWereOrYourSideWas konnten das Blatt gegen den verfolgenden Feind wenden und ihn vollständig vernichten.",
 		
 		"engagementMutualDestruction":"Die Schiffe beider Seiten wurden zu nichts als Schrott reduziert.",
 		"mutualDestructionRepairs":"Aber noch ist nicht alles verloren. Sie übernehmen das Kommando über die $boardableShipName, organisieren Reparaturteams und konzentrieren sich darauf, die grundlegende Antriebs- und Lebenserhaltungssysteme wiederherzustellen. Ihre Bemühungen sind erfolgreich, und einige Stunden später können Sie weiterfliegen.",
 		
-		"enemyHarass":"Die Feindkraefte belaestigen deine Schiffe waehrend des Rueckzugs und stoeren sie erheblich, erzwingen aber kein Gefecht.",
-		"enemyUnableToPursue":"Die feindlichen Schiffe sind nicht zur Verfolgung faehig, sodass sich deine Kraefte ohne weitere Zwischenfaelle zurueckziehen koennen.",
-		"enemyDecidesNotToPursue":"Die feindlichen Schiffe setzen nicht zur Verfolgung an, sodass sich deine Kraefte ohne weitere Zwischenfaelle zurueckziehen koennen.",
-		"enemyPursuit":"Die feindliche Flotte verfolgt deine Kraefte.",
+		"enemyHarass":"Die Feindkräfte belästigen deine Schiffe während des Rückzugs und stören sie erheblich, erzwingen aber kein Gefecht.",
+		"enemyUnableToPursue":"Die feindlichen Schiffe sind nicht zur Verfolgung fähig, sodass sich deine Kräfte ohne weitere Zwischenfälle zurückziehen können.",
+		"enemyDecidesNotToPursue":"Die feindlichen Schiffe setzen nicht zur Verfolgung an, sodass sich deine Kräfte ohne weitere Zwischenfälle zurückziehen können.",
+		"enemyPursuit":"Die feindliche Flotte verfolgt deine Kräfte.",
 		
 		"playerRecovery":"$yourForcesWereOrYourSideWas konnte einen Teil seiner Kampfbereitschaft wiederherstellen, da es den Kampfraum kontrollierte und der Einsatz begrenzt war.",
 		"enemyRecovery":"Die feindlichen Streitkräfte können einen Teil ihrer Kampfbereitschaft wiederherstellen, da sie den Kampfraum kontrollieren und der Einsatz begrenzt war.",
@@ -119,20 +119,20 @@
 		"engageMutual":"Die gegnerische Flotte rückt vor, um sich der Schlacht anzuschließen.",
 		"pursue":"Ihre Streitkräfte verfolgen den Feind und schaffen es, ihn so weit einzukreisen, dass sie ihn zum Kampf zwingen können.",
 		
-		"postBattleAggressive":"Die $faction-$fleetOrShip manoevriert fuer ein weiteres Gefecht.",
-		"postBattleDisengage":"Die $faction-$fleetOrShip manoevriert, um sich zu loesen.",
+		"postBattleAggressive":"Die $faction-$fleetOrShip manövriert für ein weiteres Gefecht.",
+		"postBattleDisengage":"Die $faction-$fleetOrShip manövriert, um sich zu lösen.",
 		"postBattleNeutral":"Der $faction $fleetOrShip nimmt eine neutrale Haltung ein.",
 		"postBattleHoldVsStrongerEnemy":"Der $faction $fleetOrShip scheint trotz der Übermacht des Gegners kampfbereit zu sein, wird aber wahrscheinlich nicht weiter darauf bestehen.",
 		
-		"postBattleAggressiveSide":"$enemyFactionAndTheirAllies manoevrieren fuer ein weiteres Gefecht.",
-		"postBattleDisengageSide":"$enemyFactionAndTheirAllies manoevrieren, um sich zu loesen.",
+		"postBattleAggressiveSide":"$enemyFactionAndTheirAllies manövrieren für ein weiteres Gefecht.",
+		"postBattleDisengageSide":"$enemyFactionAndTheirAllies manövrieren, um sich zu lösen.",
 		"postBattleNeutralSide":"Der $enemyFactionAndTheirAllies nimmt eine neutrale Haltung ein.",
 		"postBattleHoldVsStrongerEnemySide":"Die $enemyFactionAndTheirAllies scheinen trotz der Übermacht ihrer Gegner kampfbereit zu sein, werden aber wahrscheinlich nicht weiter darauf bestehen.",
 		
 		"cutComm":"Sie unterbrechen die Kommunikationsverbindung und erwägen die verfügbaren taktischen Optionen.",
 	
 		"repairReport":"Die Bergungsteams konnten die Grundsysteme auf $repairedShipList wiederherstellen.",
-		"casualtyReport":"Vorlaeufige Berichte sprechen von $crewLost verlorenen Crewmitgliedern und $marinesLost verlorenen Marines im letzten Gefecht.",
+		"casualtyReport":"Vorläufige Berichte sprechen von $crewLost verlorenen Crewmitgliedern und $marinesLost verlorenen Marines im letzten Gefecht.",
 		"recoveryReport":"Nach dem Gefecht wurden $crewRecovered Crewmitglieder und $marinesRecovered Marines aus Rettungskapseln und intakten Bereichen der Wracks geborgen.",
 
 		#
@@ -161,7 +161,7 @@
 		"boardingOutcomeEscape":"Die verschanzten feindlichen Truppen können Ihre Angriffsteams lange genug aufhalten, um die Reparatur der Triebwerke abzuschließen und zu entkommen.",
 		"boardingCleanEscapeMissedLaunch":"Im letzten Moment gewinnt das feindliche Schiff wieder an Antriebskraft und kann seine Flugbahn so weit ändern, dass es den meisten Angreifern ausweichen kann und genügend Zeit gewinnt, um zu entkommen. Nach einer Bergungsaktion werden die Besatzung der $boardingCrewLost und die Marinesoldaten der $boardingMarinesLost weiterhin vermisst.",
 		
-		"boardingNoMarines":"Sie haben keine Marines verfuegbar, um Enteroperationen durchzufuehren. Ein automatisiertes System meldet zudem, dass eine Enteroperation keine Erfolgschance haette.",
+		"boardingNoMarines":"Sie haben keine Marines verfügbar, um Enteroperationen durchzuführen. Ein automatisiertes System meldet zudem, dass eine Enteroperation keine Erfolgschance hätte.",
 		"boardingProjection":"Sie haben $marines Marine(s) zur Verfügung. Laut Simulationen einer KI auf Gamma-Niveau hätte eine Enteraktion eine Erfolgschance von $boardingSuccessChance.",
 		
 		"boardingCasualtyReport":"Eine nachträgliche Bewertung zeigt, dass während der Kämpfe $boardingMarinesLost Marine(s) verloren gegangen sind.",  
@@ -249,9 +249,9 @@
 		"playerOutFirstEngageLoss":"Ihre Streitkräfte ziehen sich vor allen Ihren Verbündeten aus dem Kampfgebiet zurück und haben die Möglichkeit, sich in relativer Sicherheit zurückzuziehen.",
 		"playerOutFirstPursuitWin":"Ihre Streitkräfte ziehen sich vor Ihren Verbündeten aus dem Kampfgebiet zurück.",
 		"playerOutFirstPursuitLoss":"Ihre Streitkräfte ziehen sich vor Ihren Verbündeten aus dem Kampfgebiet zurück.",
-		"ongoingBattleEngage":"Die $alliedFactionAndTheirAllies ruecken vor, um die $enemyFactionAndTheirAllies anzugreifen.",
-		"ongoingBattleStation":"Die $alliedFactionAndTheirAllies behaupten sich gegenueber den $enemyFactionAndTheirAllies.",
-		"ongoingBattlePursue":"Die $alliedFactionAndTheirAllies verfolgen die sich zurueckziehenden $enemyFactionAndTheirAllies.",
+		"ongoingBattleEngage":"Die $alliedFactionAndTheirAllies rücken vor, um die $enemyFactionAndTheirAllies anzugreifen.",
+		"ongoingBattleStation":"Die $alliedFactionAndTheirAllies behaupten sich gegenüber den $enemyFactionAndTheirAllies.",
+		"ongoingBattlePursue":"Die $alliedFactionAndTheirAllies verfolgen die sich zurückziehenden $enemyFactionAndTheirAllies.",
 		"ongoingBattleHarass":"Die $alliedFactionAndTheirAllies bedrängen die sich zurückziehenden $enemyFactionAndTheirAllies, verursachen dadurch erhebliche Störungen, zwingen sie jedoch letztendlich nicht zum Kampf.",
 		"ongoingBattleLetGo":"Der $alliedFactionAndTheirAllies ließ den $enemyFactionAndTheirAllies ohne weitere Zwischenfälle ziehen.",
 		"ongoingBattleDisengage":"Die $alliedFactionAndTheirAllies versuchen, sich von den $enemyFactionAndTheirAllies. zu trennen.",
@@ -316,7 +316,7 @@
 		"chmShipPurchase_action":"Öffnen Sie den Umrüstungsbildschirm.",
 		"chmShipPurchase_dismiss":"Abweisen",
 		
-		"chmWingPurchase_text":"Herzlichen Glueckwunsch, Sie haben gerade ein neues Jagdgeschwader gekauft!\n\nDie Einsatzbereitschaft des Jagdgeschwaders entspricht der Anzahl der verfuegbaren Ersatz-Jagdflugzeugchassis, die jedoch nur verwendet werden koennen, wenn Sie ein Schiff mit einem Flugdeck in Ihrer Flotte haben.\n\nNeue Jagdflugzeuge starten von einem nahe gelegenen Flugdeck, um Verluste im Kampf zu ersetzen. Solange Ihre Flotte ueber ein Schiff mit geeigneten Reparatureinrichtungen (d. h. einem Flugdeck) verfuegt, kann ein Jagdgeschwader nicht vollstaendig verloren gehen, selbst wenn seine Kampfbereitschaft auf null reduziert ist.",
+		"chmWingPurchase_text":"Herzlichen Glückwunsch, Sie haben gerade ein neues Jagdgeschwader gekauft!\n\nDie Einsatzbereitschaft des Jagdgeschwaders entspricht der Anzahl der verfügbaren Ersatz-Jagdflugzeugchassis, die jedoch nur verwendet werden können, wenn Sie ein Schiff mit einem Flugdeck in Ihrer Flotte haben.\n\nNeue Jagdflugzeuge starten von einem nahe gelegenen Flugdeck, um Verluste im Kampf zu ersetzen. Solange Ihre Flotte über ein Schiff mit geeigneten Reparatureinrichtungen (d. h. einem Flugdeck) verfügt, kann ein Jagdgeschwader nicht vollständig verloren gehen, selbst wenn seine Kampfbereitschaft auf null reduziert ist.",
 		"chmWingPurchase_dismiss":"Abweisen",
 		
 		"chmRefitOnStation_text":"Wenn Sie ein Schiff umrüsten, während es an einer Raumstation angedockt ist, können Sie sowohl die Waffen in Ihrem Frachtraum als auch die an der Station zum Kauf angebotenen Waffen montieren.\n\nWenn Sie die Änderungen an der Ausrüstung des Schiffes rückgängig machen (oder einfach die gekauften Waffen demontieren), werden Ihnen die verwendeten Credits zurückerstattet, jedoch nur, wenn Sie den Umrüstungsbildschirm nicht verlassen haben.",
@@ -337,7 +337,7 @@
 		"chmOverCrewCapacity_action":"Öffnen Sie den Crew-/Frachtbildschirm.",
 		"chmOverCrewCapacity_dismiss":"Abweisen",
 		
-		"chmLowFuel_text":"Deiner Flotte geht der Treibstoff aus.\n\nWenn sie im Hyperraum keinen Treibstoff mehr hat, treibt sie zum naechsten Sternsystem und kann dort stranden, wenn du keinen neuen Treibstoff beschaffen kannst.",
+		"chmLowFuel_text":"Deiner Flotte geht der Treibstoff aus.\n\nWenn sie im Hyperraum keinen Treibstoff mehr hat, treibt sie zum nächsten Sternsystem und kann dort stranden, wenn du keinen neuen Treibstoff beschaffen kannst.",
 		"chmLowFuel_dismiss":"Abweisen",
 		
 		"chmLowSupplies_text":"Ihre Flotte hat nur noch wenige Vorräte.\n\nWenn die Vorräte aufgebraucht sind, werden alle Reparaturen eingestellt und die Schiffe verlieren mit der Zeit ihre Kampfbereitschaft. Nach mehr als ein paar Tagen ohne Vorräte besteht für die Flotte das Risiko von Unfällen, die von geringfügigen (z. B. Verlust eines Teils der Ladung) bis zu kritischen (Verlust eines Schiffes) reichen können.\n\nEs wird empfohlen, so schnell wie möglich weitere Vorräte zu beschaffen.\n\nUm den Verbrauch an Vorräten zu reduzieren, können Sie alle laufenden Schiffsreparaturen aussetzen. Als letzte Möglichkeit, um mehr Vorräte zu erhalten, können Sie eines Ihrer Schiffe versenken.\n\nDie entsprechenden Befehle finden Sie auf dem Flottenbildschirm.",
@@ -378,7 +378,6 @@
 	
 		
 }
-
 
 
 
