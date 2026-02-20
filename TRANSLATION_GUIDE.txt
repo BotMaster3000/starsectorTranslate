@@ -182,3 +182,44 @@ Post-MT QA checklist (required):
    - `Benzin`, `Auskuppeln`, other project-specific forbidden terms.
 3. Review all strings containing `$` placeholders manually.
 4. Review key combat/status strings in `data/strings/strings.json` manually.
+
+==================================================
+9) Encoding and File Format Notes
+==================================================
+
+Critical:
+- `data/strings/descriptions.csv` uses cp1252-compatible encoding in this project workflow.
+- Most JSON/faction text files are handled as UTF-8.
+
+Practical rules:
+1. For `descriptions.csv`, read/write with cp1252 to avoid decode/encode corruption.
+2. Do not normalize line endings unless needed.
+3. Preserve CSV quoting exactly (especially multiline cells and escaped quotes `""`).
+4. After writing CSV, re-open and parse once to verify row/column integrity.
+
+==================================================
+10) DeepL Workflow (Reproducible)
+==================================================
+
+Environment setup used in this repository:
+1. Create local venv: `python3 -m venv .venv`
+2. Install client: `.venv/bin/pip install deepl`
+3. Set key: `export DEEPL_AUTH_KEY=...`
+
+Translation policy:
+1. Translate only value text, never keys/ids.
+2. Protect before MT, then restore after MT:
+   - `$...` placeholders
+   - `%s`, `%d`, etc.
+   - escaped sequences `\\n`, `\\t`, `\\r`
+   - locked proper nouns from Sections 4/5
+3. Use chunked requests (small batches) to reduce API errors and make retries easier.
+4. Re-run post-MT QA checklist from Section 8.
+
+Known pitfall from this project:
+- Naive global `ae/oe/ue -> ä/ö/ü` replacement causes false positives:
+  - `feuert` -> `feürt`
+  - `Abfeuern` -> `Abfeürn`
+  - `manuell` -> `manüll`
+  - `aktuell` -> `aktüll`
+- Always use targeted normalization, never blanket global replacement.

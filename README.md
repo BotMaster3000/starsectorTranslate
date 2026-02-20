@@ -26,3 +26,10 @@ To apply a translation, copy the language folder's `data` contents into the game
 - Always keep a backup of your game `data/` folder before replacing files.
 - The base `data/` folder in this repo is kept as reference and should not be overwritten here.
 - Language folders are designed as patch/delta overlays; unchanged files are inherited from the game's original `data/`.
+
+## Maintainer Notes
+
+- `ger/data/` is intentionally delta-only (changed files only).
+- `data/strings/descriptions.csv` requires cp1252-safe handling in tooling.
+- Machine translation should preserve placeholders (`$...`, `%...`, `\\n`) and locked proper nouns.
+- Avoid global `ae/oe/ue -> ä/ö/ü` replacements; apply targeted fixes to prevent false positives (e.g. `feuert`/`Abfeuern`).
