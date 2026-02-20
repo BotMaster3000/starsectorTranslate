@@ -1,0 +1,43 @@
+{
+	"trade":"Handelskonvoi",
+	"tradeLiner":"Passagierkonvoi",
+	"tradeSmuggler":"Schmuggler",
+	"smallTrader":"Haendler",
+	
+	"patrolSmall":"Schnelles Vorpostenschiff",
+	"patrolMedium":"Patrouille",
+	"patrolLarge":"Abteilung",
+	
+	"leagueEnforcer":"Vollstrecker",
+	"leagueArmada":"Grossarmada",
+	"supplyFleet":"Versorgungsflotte",
+	
+	"commerceRaiders":"Handelsraeuber",
+	"raider":"Raeuber",
+	
+	"sacredProtectors":"Heilige Beschuetzer",
+	
+	"investigators":"Ermittler",
+	
+	"inspectionFleet":"Inspektionsflotte",
+	"taskForce":"Einsatzgruppe",
+	
+	"scavengerSmall":"Prospektor",
+	"scavengerMedium":"Pluenderer",
+	"scavengerLarge":"Bergungsflotte",
+	
+	"foodReliefFleet":"Hilfskonvoi",
+	
+	"shrinePilgrims":"Luddische Pilger",
+	"academyFleet":"Akademie-Shuttledienst",
+	
+	"mercScout":"Soeldneraufklaerer",
+	"mercBountyHunter":"Kopfgeldjaeger",
+	"mercPrivateer":"Kaperfahrer",
+	"mercPatrol":"Soeldnerpatrouille",
+	"mercArmada":"Soeldnerkompanie",
+	
+	"battlestation":"Kampfstation",
+	
+	#"":"",
+}

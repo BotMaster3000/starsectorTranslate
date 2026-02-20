@@ -1,0 +1,145 @@
+{
+	"ranks":{
+		"factionLeader":{"name":"Oberkommandant"},
+		"houseLeader":{"name":"Hauspatriarch"},
+		"houseLeaderMale":{"name":"Hauspatriarch"},
+		"houseLeaderFemale":{"name":"Hausmatriarchin"},
+	
+		"spaceSailor":{"name":"Raumfahrer"},
+		"spaceChief":{"name":"Leitender Offizier"},
+		"spaceEnsign":{"name":"Faehnrich"},
+		"spaceLieutenant":{"name":"Leutnant"},
+		"spaceCommander":{"name":"Kommandant"},
+		"spaceCaptain":{"name":"Kapitaen"},
+		"spaceAdmiral":{"name":"Admiral"},
+		"spaceMarshal":{"name":"Raummarschall"},
+		
+		"groundPrivate":{"name":"Gefreiter"},
+		"groundSergeant":{"name":"Sergeant"},
+		"groundLieutenant":{"name":"Leutnant"},
+		"groundCaptain":{"name":"Kapitaen"},
+		"groundMajor":{"name":"Major"},
+		"groundColonel":{"name":"Oberst"},
+		"groundGeneral":{"name":"General"},
+		
+		"knightCaptain":{"name":"Ritter-Kapitaen"},
+		
+		"chiefHighInspector":{"name":"Oberster Hauptinspektor"},
+		"deputyStarMarshal":{"name":"Stellvertretender Sternmarschall"},
+		"guardHighDeputyExecutor":{"name":"Hoher Vizevollstrecker der Garde"},
+		
+		"citizen":{"name":"Buerger"},
+		"executive":{"name":"Direktor"},
+		"seniorExecutive":{"name":"Senior-Direktor"},
+		"agent":{"name":"Agent"},
+		"specialAgent":{"name":"Spezialagent"},
+		
+		"pilot":{"name":"Pilot"},
+		"unknown":{name:"Unbekannt"},
+		
+		"brother":{name:"Bruder"},
+		"sister":{name:"Schwester"},
+		"father":{name:"Vater"},
+		"mother":{name:"Mutter"},
+		"elder":{name:"Aeltester"},
+		"aristocrat":{name:"Aristokrat"},
+		"terrorist":{name:"Terrorist"},
+		"freedomFighter":{name:"Freiheitskaempfer"},
+		"clone":{name:"Klon"},
+		
+	},
+	
+	"posts":{
+		"factionLeader":{"name":"Oberkommandant"},
+	
+		"patrolCommander":{"name":"Patrouillenkommandant"},
+		"fleetCommander":{"name":"Flottenkommandant"},
+		
+		"baseCommander":{"name":"Basis-Kommandant"},
+		"stationCommander":{"name":"Stationskommandant"},
+		"outpostCommander":{"name":"Aussenposten-Kommandant"},
+		"portmaster":{"name":"Hafenmeister"},
+		
+		"intelligenceDirector":{"name":"Direktor der Aufklaerung"},
+		"guardLeader":{"name":"Direktor der Spezialkraefte"},
+		
+		"supplyOfficer":{"name":"Quartiermeister"},
+		"supplyManager":{"name":"Versorgungsleiter"},
+		"medicalSupplier":{"name":"Medizinischer Versorger"},
+		
+		"administrator":{"name":"Administrator"},
+		"militaryAdministrator":{"name":"Militaergouverneur"},
+		"freeAdmin":{"name":"Freier Administrator"},
+		
+		"guildMaster":{"name":"Gildenmeister"},
+		"communeLeader":{"name":"Kommunenfuehrer"},
+		"executive":{"name":"Direktor"},
+		"seniorExecutive":{"name":"Senior-Direktor"},
+		"minorCriminal":{"name":"Kleinkrimineller"},
+		"criminal":{"name":"Krimineller"},
+		"spacer":{"name":"Raumfahrer"},
+		
+		"genericMilitary":{"name":"Kommandant"},
+		"marineSquadLeader":{"name":"Sergeant"},
+		
+		"trader":{"name":"Haendler"},
+		"merchant":{"name":"Kaufmann"},
+		"investor":{"name":"Investor"},
+		"commodities_agent":{"name":"Warenagent"},
+		"entrepreneur":{"name":"Unternehmer"},
+		"nanoforge_engineer":{"name":"Nanoforge-Ingenieur"},
+		
+		"shady":{"name":"Zwielichtige Gestalt"},
+		"gangster":{"name":"Gangster"},
+		"smuggler":{"name":"Schmuggler"},
+		"fence":{"name":"Hehler"},
+		"armsDealer":{"name":"Waffenhaendler"},
+		
+		
+		"citizen":{"name":"Buerger"},
+		"boss":{"name":"Boss"},
+		"crewBoss":{"name":"Crew-Chef"},
+		
+		"mercenary":{"name":"Soeldneroffizier"},
+		"officer":{"name":"Offizier"},
+		"officer_for_hire":{"name":"Offizier (anheuerbar)"}, 
+		
+		"investigator":{"name":"Chefermittler"},
+		"agent":{"name":"Agent"},
+		"specialAgent":{"name":"Spezialagent"},
+		
+		"provost":{name:"Probst"},
+		"academician":{name:"Akademiker"},
+		
+		"securityChief":{name:"Sicherheitschef"},
+		"doctor":{name:"Doktor"},
+		"hacker":{name:"Hacker"},
+		"hermit":{name:"Einsiedler"},
+		"pensioner":{name:"Rentner"},
+		"activist":{name:"Aktivist"},
+		"scientist":{name:"Wissenschaftler"},
+		"terrorist":{name:"Terrorist"},
+		"warlord":{name:"Warlord"},
+		"unknown":{name:"Unbekannt"},
+		"aristocrat":{name:"Aristokrat"},
+		
+		"curate":{name:"Kurat"},
+		"synodSubcurate":{name:"Synoden-Subkurat"},
+		"subcurate":{name:"Subkurat"},
+		"archcurate":{name:"Archkurat"},
+		"heretic":{name:"Haeretiker"},
+		"shrinePriest":{name:"Kurat Sacraria"},
+		"excubitorOrbis":{"name":"Excubitor Orbis"},
+		"initiate":{"name":"Novize"},
+		"novice":{"name":"Novize"},
+		"pilgrim":{"name":"Pilger"},
+		
+	},
+}
+
+
+
+
+
+
+

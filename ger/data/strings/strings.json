@@ -1,0 +1,387 @@
+{
+
+	"fleetInteractionDialog":{
+		# Available tokens:
+		#
+		# $faction  faction of other fleet ("Hegemony", "Tri-Tachyon", "Pirate", etc)
+		# $fleetName name of other fleet ("Scout", "Security Detachment", etc)
+		# $firstName first name of other fleet's commander
+		# $lastName last name of other fleet's commander
+		# $fleetOrShip "fleet", "ship" if only one ship in fleet, "fighter wing" if only one fighter wing (and nothing else)
+		# $repairedShipList list of names of the ships that were successfully repaired after being disabled
+		# $crewLost Approximate number of crew lost during the last engagement, i.e. "4", "around 100", or "no". 
+		# $marinesLost Approximate number of marines lost during the last engagement, i.e. "4", "around 100", or "no". 
+		# $crewRecovered Number of crew recovered after winning the entire encounter. 
+		# $marinesRecovered Number of marines recovered after winning the entire encounter.
+		# $numLifeSigns Approximate number of crew + marines on ship about to be boarded. Can also be "no".
+		# $boardingTaskForceShips List of names of the ships in the boarding task force.
+		# $boardingCrewLost
+		# $boardingEnemyCrewLost
+		# $boardingMarinesLost
+		# $boardingEnemyMarinesLost
+		# $boardableShipName "ISS Something or Other"
+		# $boardingTaskForceShipName "ISS Something or Other", name of the first ship in the boarding task force
+		# $creditsLooted
+		# $flagship On flagship selection
+		# $crashMothballList
+		# battles with allies
+		# Tokens:
+		# $alliedFactionAndTheirAllies "Hegemony forces and their allies"
+		# $enemyFactionAndTheirAllies "Hegemony forces and their allies"
+		# $yourForcesWereOrYourSideWas	 
+	
+		"initialWithStationVsLargeFleet":"Die $faction-$fleetOrShip manoevriert so, dass sie von der Station gedeckt bleibt und deine Flotte sich loesen kann. Beim Rueckzug ist jedoch mit Angriffen auf deine Kraefte zu rechnen.",
+		"initialAggressive":"Die $faction-$fleetOrShip manoevriert, um dir das Loesen vom Gefecht zu erschweren.",
+		"initialDisengage":"Die $faction-$fleetOrShip versucht, sich zu loesen.",
+		"initialCareful":"Die $faction-$fleetOrShip haelt vorsichtig Abstand und bleibt bereit, sich bei Feindseligkeiten zu loesen.",
+		"initialNeutral":"Die $faction-$fleetOrShip nimmt eine neutrale Haltung ein.",
+		"initialHoldVsStrongerEnemy":"Der $faction $fleetOrShip scheint trotz der Übermacht des Gegners kampfbereit zu sein, wird aber wahrscheinlich nicht weiter darauf bestehen.",
+		"initialAggressiveSide":"$enemyFactionAndTheirAllies manoevrieren, um dir das Loesen vom Gefecht zu erschweren.",
+		"initialDisengageSide":"Die $enemyFactionAndTheirAllies versuchen, sich zu lösen.",
+		"initialCarefulSide":"Die $enemyFactionAndTheirAllies halten sorgfältig Abstand und sind bereit, sich im Falle von Feindseligkeiten zurückzuziehen.",
+		"initialNeutralSide":"Der $enemyFactionAndTheirAllies nimmt eine neutrale Haltung ein.",
+		"initialHoldVsStrongerEnemySide":"Die $enemyFactionAndTheirAllies scheinen trotz der Übermacht ihrer Gegner kampfbereit zu sein, werden aber wahrscheinlich nicht weiter darauf bestehen.",
+	
+		"initialKnows":"Es ist sich Ihrer Identität bewusst, da der Transponder Ihres $playerFleetOrShip eingeschaltet ist.",
+		"initialKnowsTOff":"Es gibt Anzeichen dafür, dass es Ihre Identität kennt, obwohl der Transponder Ihres $playerFleetOrShip ausgeschaltet ist, wahrscheinlich weil es Sie kürzlich gesehen hat.",
+		"initialKnowsUnique":"Obwohl der Transponder Ihres $playerFleetOrShip ausgeschaltet ist, scheint er Ihre Identität zu erkennen – wahrscheinlich aufgrund der Anwesenheit bemerkenswerter Schiffe in Ihrer Flotte.",
+		"initialKnowsUniqueSide":"Obwohl der Transponder Ihres $playerFleetOrShip ausgeschaltet ist, scheint er Ihre Identität zu erkennen – wahrscheinlich aufgrund der Anwesenheit bemerkenswerter Schiffe in Ihrer Flotte.",
+		"initialDoesntKnow":"Es scheint sich Ihrer Identität nicht sicher zu sein. Jegliche Feindseligkeiten werden nur geringe Auswirkungen auf Ihren Ruf haben.",
+		"initialKnowsSide":"Sie kennen Ihre Identität, da der Transponder Ihres $playerFleetOrShip eingeschaltet ist.",
+		"initialKnowsTOffSide":"Es gibt Anzeichen dafür, dass sie Ihre Identität kennen, obwohl der Transponder Ihres $playerFleetOrShip ausgeschaltet ist, wahrscheinlich weil sie Sie kürzlich gesehen haben.",
+		"initialDoesntKnowSide":"Sie scheinen sich Ihrer Identität nicht sicher zu sein. Jegliche Feindseligkeiten werden nur geringe Auswirkungen auf Ihren Ruf haben.",
+		
+		"battleDefeat":"$yourForcesWereOrYourSideWas im letzten Gefecht besiegt.",
+		"battleTotalDefeat":"$yourForcesWereOrYourSideWas im letzten Gefecht vernichtend geschlagen.",
+		"battleVictory":"$yourForcesWereOrYourSideWas im letzten Gefecht siegreich.",
+		"battleTotalVictory":"$yourForcesWereOrYourSideWas konnte im letzten Gefecht einen vollstaendigen Sieg erringen.",
+		"battleFleetLost":"Alle deine Schiffe wurden im letzten Gefecht zerstoert.",
+		
+		"friendlyFireRepLoss":"Im Verlauf des Gefechts kam es zu mehreren schweren Vorfällen von Eigenbeschuss.",
+		
+		"pursuitAutoresolve":"Deine Kraefte nehmen wie befohlen die Verfolgung auf.",
+		"pursuitVictoryNoLosses":"Die abziehenden Feindkraefte konnten sich loesen, ohne Schiffe zu verlieren.",
+		"pursuitVictoryLosses":"Die abziehenden Feindkraefte konnten sich loesen, jedoch nicht ohne Verluste.",
+		"pursuitTotalVictory":"Kein feindliches Schiff konnte entkommen.",
+		"pursuitDefeat":"Die feindlichen Truppen konnten das Blatt wenden und Ihren Truppen eine Niederlage zufügen.",
+		"pursuitTotalDefeat":"In einer überraschenden Wendung gelang es den sich zurückziehenden feindlichen Truppen, das Blatt zu wenden und einen vernichtenden Sieg zu erringen.",
+		
+		"escapeDefeat":"$yourForcesWereOrYourSideWas konnten sich vom Feind loesen.",
+		"escapeTotalDefeat":"Keines der Schiffe deiner Seite konnte entkommen.",
+		"escapeVictory":"$yourForcesWereOrYourSideWas konnten das Blatt gegen den verfolgenden Feind wenden und ihm eine Niederlage zufuegen.",
+		"escapeTotalVictory":"$yourForcesWereOrYourSideWas konnten das Blatt gegen den verfolgenden Feind wenden und ihn vollstaendig vernichten.",
+		
+		"engagementMutualDestruction":"Die Schiffe beider Seiten wurden zu nichts als Schrott reduziert.",
+		"mutualDestructionRepairs":"Aber noch ist nicht alles verloren. Sie übernehmen das Kommando über die $boardableShipName, organisieren Reparaturteams und konzentrieren sich darauf, die grundlegende Antriebs- und Lebenserhaltungssysteme wiederherzustellen. Ihre Bemühungen sind erfolgreich, und einige Stunden später können Sie weiterfliegen.",
+		
+		"enemyHarass":"Die Feindkraefte belaestigen deine Schiffe waehrend des Rueckzugs und stoeren sie erheblich, erzwingen aber kein Gefecht.",
+		"enemyUnableToPursue":"Die feindlichen Schiffe sind nicht zur Verfolgung faehig, sodass sich deine Kraefte ohne weitere Zwischenfaelle zurueckziehen koennen.",
+		"enemyDecidesNotToPursue":"Die feindlichen Schiffe setzen nicht zur Verfolgung an, sodass sich deine Kraefte ohne weitere Zwischenfaelle zurueckziehen koennen.",
+		"enemyPursuit":"Die feindliche Flotte verfolgt deine Kraefte.",
+		
+		"playerRecovery":"$yourForcesWereOrYourSideWas konnte einen Teil seiner Kampfbereitschaft wiederherstellen, da es den Kampfraum kontrollierte und der Einsatz begrenzt war.",
+		"enemyRecovery":"Die feindlichen Streitkräfte können einen Teil ihrer Kampfbereitschaft wiederherstellen, da sie den Kampfraum kontrollieren und der Einsatz begrenzt war.",
+		"bothRecovery":"Beide Seiten können nach einem begrenzten und chaotischen Gefecht etwas von ihrer Kampfbereitschaft zurückgewinnen, während sie sich zurückziehen.",
+		
+		"enemyCleanDisengage":"Die gegnerische Flotte kann sich sauber zurückziehen, da Ihre Streitkräfte keine Verfolgung aufnehmen können.",
+		"enemyCleanDisengageSide":"Die gegnerische Flotte kann sich sauber zurückziehen, da die Streitkräfte auf Ihrer Seite keine Verfolgung aufnehmen können.",
+		
+		# in playerUnableToPursue, the player can still harass the escaping ships, so it's not a "clean" disengagement.
+		"playerUnableToPursue":"Es sieht so aus, als würde sich die gegnerische Flotte zurückziehen können, ohne dass Sie einen Kampf erzwingen können.",
+		"playerUnableToPursueNoReadyShips":"Keines Ihrer Schiffe ist in der Lage, die Verfolgung aufzunehmen.",
+		"playerUnableToPursueStoodDown":"Ihre Schiffe konzentrieren sich darauf, ihre Einsatzbereitschaft wiederherzustellen, und sind nicht in der Lage, die Verfolgung aufzunehmen.",
+		
+		"playerDisruptedEnemy":"Obwohl Sie sich aus dem letzten Gefecht zurückgezogen haben, haben Ihre Truppen den Feind gestört und können sich zurückziehen, ohne verfolgt zu werden.",
+		"enemyDisruptedPlayer":"Obwohl Sie in der letzten Schlacht siegreich waren, haben Ihre Truppen so hohe Verluste erlitten, dass sie den Feind nicht verfolgen können, wenn er sich zurückzieht.",
+		"enemyDisruptedPlayerSide":"Obwohl Sie in der letzten Schlacht siegreich waren, haben die Truppen auf Ihrer Seite so hohe Verluste erlitten, dass sie den Feind nicht verfolgen können, wenn er sich zurückzieht.",
+		"cleanDisengageOpportunity":"Nach einem taktischen Sieg haben Ihre Streitkräfte die Möglichkeit, sich sauber vom Feind zurückzuziehen.",
+		
+		#"playerTooLargeToDisengage":"Ihre Flotte ist zu groß, um sich effektiv zurückziehen zu können, es sei denn, die gegnerischen Streitkräfte befinden sich bereits in Unordnung.",
+		#"playerTooLargeCanFightToDisengage":"Wenn Sie den Gegner angreifen und genügend seiner Schiffe zerstören, außer Gefecht setzen oder zum Rückzug zwingen, kann sich Ihre Flotte zurückziehen, ohne verfolgt zu werden.",
+		#"highlightTooLarge":"zu groß, um sich lösen zu können",
+		#"highlightCanFight":"sich zurückziehen, ohne verfolgt zu werden",
+		"playerTooLargeToDisengage":"Ihre Flotte ist zu groß, um sich leicht zurückziehen zu können. Wenn Sie den Feind angreifen und genügend seiner Schiffe zerstören, außer Gefecht setzen oder zum Rückzug zwingen, kann sich Ihre Flotte zurückziehen, ohne verfolgt zu werden.",
+		"highlightTooLarge":"zu groß, um sich lösen zu können",
+		"highlightDisengage":"sich zurückziehen, ohne verfolgt zu werden",
+		
+		
+		"highlghtDisruptedEnemy":"sich zurückziehen, ohne verfolgt zu werden",
+		"highlightDisruptedPlayer":"nicht in der Lage, Verfolgung anzubieten",
+		"highlightCleanDisengage":"sich sauber vom Feind lösen",
+		
+		
+		"playerLetGo":"Ihre Schiffe unternehmen keinen Versuch zur Verfolgung, sodass sich die feindlichen Streitkräfte ohne weitere Zwischenfälle zurückziehen können.",
+		"playerHarass":"Ihre Streitkräfte bedrängen die feindlichen Schiffe auf ihrem Rückzug und verursachen dadurch erhebliche Störungen, zwingen sie jedoch letztendlich nicht zum Kampf.",
+		
+		
+		"engageForce":"Sie ordnen eine Reihe von Manövern an, die dem feindlichen Befehlshaber immer weniger Optionen lassen.",
+		"engagePursuit":"Die gegnerische Flotte versucht sich zurückzuziehen, aber sie wird nicht ohne Kampf davonkommen.",
+		"engageMutual":"Die gegnerische Flotte rückt vor, um sich der Schlacht anzuschließen.",
+		"pursue":"Ihre Streitkräfte verfolgen den Feind und schaffen es, ihn so weit einzukreisen, dass sie ihn zum Kampf zwingen können.",
+		
+		"postBattleAggressive":"Die $faction-$fleetOrShip manoevriert fuer ein weiteres Gefecht.",
+		"postBattleDisengage":"Die $faction-$fleetOrShip manoevriert, um sich zu loesen.",
+		"postBattleNeutral":"Der $faction $fleetOrShip nimmt eine neutrale Haltung ein.",
+		"postBattleHoldVsStrongerEnemy":"Der $faction $fleetOrShip scheint trotz der Übermacht des Gegners kampfbereit zu sein, wird aber wahrscheinlich nicht weiter darauf bestehen.",
+		
+		"postBattleAggressiveSide":"$enemyFactionAndTheirAllies manoevrieren fuer ein weiteres Gefecht.",
+		"postBattleDisengageSide":"$enemyFactionAndTheirAllies manoevrieren, um sich zu loesen.",
+		"postBattleNeutralSide":"Der $enemyFactionAndTheirAllies nimmt eine neutrale Haltung ein.",
+		"postBattleHoldVsStrongerEnemySide":"Die $enemyFactionAndTheirAllies scheinen trotz der Übermacht ihrer Gegner kampfbereit zu sein, werden aber wahrscheinlich nicht weiter darauf bestehen.",
+		
+		"cutComm":"Sie unterbrechen die Kommunikationsverbindung und erwägen die verfügbaren taktischen Optionen.",
+	
+		"repairReport":"Die Bergungsteams konnten die Grundsysteme auf $repairedShipList wiederherstellen.",
+		"casualtyReport":"Vorlaeufige Berichte sprechen von $crewLost verlorenen Crewmitgliedern und $marinesLost verlorenen Marines im letzten Gefecht.",
+		"recoveryReport":"Nach dem Gefecht wurden $crewRecovered Crewmitglieder und $marinesRecovered Marines aus Rettungskapseln und intakten Bereichen der Wracks geborgen.",
+
+		#
+		# BOARDING ENEMY SHIP
+		#
+		"enemyShipBoardable":"Ihre Streitkräfte bereiten sich auf den Beginn der Bergungsarbeiten vor, als plötzlich die Systeme eines feindlichen Schiffes wieder online gehen. Ein schneller Scan erkennt Lebenszeichen von $numLifeSigns an Bord.",
+		"engageBoardableDisabled":"Ihre Streitkräfte greifen das feindliche Schiff an, und einige gut platzierte Schüsse neutralisieren es schnell.",
+		"engageBoardableDestroyed":"Ihre Streitkräfte greifen das feindliche Schiff an. Eine gewaltige Explosion verdunkelt die Bildschirme, kurz nachdem einige Schüsse den beschädigten Rumpf getroffen haben, und als die Bildschirme wieder funktionieren, ist nur noch eine sich langsam ausbreitende Trümmerkugel zu sehen.",
+		"engageBoardableEscaped":"Ihre Streitkräfte bewegen sich, um das feindliche Schiff anzugreifen, aber dessen Besatzung kann das Antriebsfeld im letzten Moment wieder aktivieren und es gelingt ihr, zu entkommen.",
+		"letBoardableGo":"Ihre Streitkräfte ziehen sich zurück und lassen das feindliche Schiff entkommen.",
+		"boardingTaskForceSelectedOneShip":"Nach Erhalt des Befehls nähert sich $boardingTaskForceShips dem feindlichen Schiff.",
+		"boardingTaskForceSelectedMultiple":"Nach Erhalt ihrer Befehle nähert sich $boardingTaskForceShips dem feindlichen Schiff.",
+		
+		"boardingApproachDock":"Es wird eine feste Verbindung mit dem feindlichen Rumpf hergestellt, und die Angriffsteams überwinden schnell die Sicherheitssysteme der Luftschleusen und sprengen provisorische Zugangspunkte in geschwächten Bereichen des Rumpfes.",
+		"boardingApproachLaunch":"Angriffsteams werden aus etwa einem Kilometer Entfernung gestartet und nähern sich dem Rumpf in Wellen, wobei sie persönliche Antriebssysteme einsetzen, um beim Endanflug abzubremsen. Die Verteidiger haben die Möglichkeit, ungestraft auf die Landungstruppen zu feuern, bis genügend Teams gelandet sind, um in den Rumpf vorzudringen.",
+		
+		"boardingOutcomeSelfDestruct":"Als Ihre Angriffsteams beginnen, den Widerstand im Inneren des feindlichen Schiffes zu überwinden, zerstört sich dieses selbst. Die meisten Männer und Frauen der Entermannschaft kommen bei der Explosion ums Leben.",
+		"boardingOutcomeShipLost":"Der $boardingTaskForceShipName wird vernichtet.", 
+		"boardingOutcomeShipDamaged":"Der $boardingTaskForceShipName ist schwer beschädigt.",
+		"boardingOutcomeTaskForceLost":"Die gesamte Task Force, die an das feindliche Schiff angedockt hat, wird zerstört.", 
+		"boardingOutcomeTaskForceLostPartial":"Einige der Schiffe, die beim Explodieren des feindlichen Schiffes angedockt waren, werden zerstört, während die übrigen schwer beschädigt werden.", 
+		"boardingOutcomeTaskForceDamaged":"Glücklicherweise wurde keines der Schiffe der Task Force zerstört.",
+		 
+		"boardingOutcomeSuccess":"Nachdem der gesamte organisierte Widerstand überwunden und jedes Abteil durchsucht wurde, meldet der Kommandant der Entermannschaft, dass das feindliche Schiff gesichert und bereit ist, eine Prisemannschaft aufzunehmen.",
+		"boardingOutcomeTooDamaged":"Nachdem der gesamte organisierte Widerstand überwunden und jedes Abteil durchsucht wurde, meldet der Kommandant der Entermannschaft, dass das feindliche Schiff gesichert ist. Leider haben Kollateralschäden durch die Kämpfe die Kernsysteme des Schiffes irreparabel beschädigt.",
+		"boardingOutcomeEscape":"Die verschanzten feindlichen Truppen können Ihre Angriffsteams lange genug aufhalten, um die Reparatur der Triebwerke abzuschließen und zu entkommen.",
+		"boardingCleanEscapeMissedLaunch":"Im letzten Moment gewinnt das feindliche Schiff wieder an Antriebskraft und kann seine Flugbahn so weit ändern, dass es den meisten Angreifern ausweichen kann und genügend Zeit gewinnt, um zu entkommen. Nach einer Bergungsaktion werden die Besatzung der $boardingCrewLost und die Marinesoldaten der $boardingMarinesLost weiterhin vermisst.",
+		
+		"boardingNoMarines":"Sie haben keine Marines verfuegbar, um Enteroperationen durchzufuehren. Ein automatisiertes System meldet zudem, dass eine Enteroperation keine Erfolgschance haette.",
+		"boardingProjection":"Sie haben $marines Marine(s) zur Verfügung. Laut Simulationen einer KI auf Gamma-Niveau hätte eine Enteraktion eine Erfolgschance von $boardingSuccessChance.",
+		
+		"boardingCasualtyReport":"Eine nachträgliche Bewertung zeigt, dass während der Kämpfe $boardingMarinesLost Marine(s) verloren gegangen sind.",  
+		
+		#
+		# BEING BOARDED (limited to ship being engaged and shot down or not, at the moment)
+		#
+		"friendlyShipBoardable":"Die Besatzung eines Ihrer beschädigten Schiffe hat Reparaturen durchgeführt, sodass wichtige Systeme wieder funktionsfähig sind. Wenn das Schiff wieder Antriebskraft erlangt, kann es sich möglicherweise wieder Ihrer Flotte anschließen.",
+		"engageFriendlyBoardableDisabled":"Leider nähern sich feindliche Schiffe und feuern einige gezielte Schüsse ab, um jede Chance darauf zunichte zu machen.",
+		"engageFriendlyBoardableDestroyed":"Leider nähern sich feindliche Schiffe und feuern auf es, bevor weitere Reparaturen durchgeführt werden können. Ein verirrter Schuss muss das Reaktor-Sicherheitsfeld zerstört haben – das Schiff explodiert und hinterlässt ein sich langsam ausbreitendes Trümmerfeld.",
+		"engageFriendlyBoardableEscaped":"Bevor der Feind näher kommen kann, sind die Reparaturen am Motor abgeschlossen und das Schiff kann entkommen, um sich wieder Ihrer Flotte anzuschließen.",
+		"engageFriendlyBoardableLetGo":"Die feindlichen Streitkräfte ziehen sich zurück und lassen das Schiff seine Reparaturen abschließen und sich zurückziehen, um sich wieder Ihrer Flotte anzuschließen.",
+		
+		"lastFriendlyShipRepairs":"Sie übernehmen das Kommando über die $boardableShipName und organisieren schnell Reparaturteams. Wenn es gelingt, den Antrieb wiederherzustellen, könnten Sie entkommen.",
+		"lastFriendlyBoardableDisabled":"Leider nähern sich feindliche Schiffe und feuern einige gezielte Schüsse ab, um jede Chance darauf zunichte zu machen.",
+		"lastFriendlyBoardableDestroyed":"Leider nähern sich feindliche Schiffe und feuern auf es, bevor weitere Reparaturen durchgeführt werden können. Ein verirrter Schuss muss das Reaktor-Sicherheitsfeld zerstört haben – das Schiff explodiert und hinterlässt ein sich langsam ausbreitendes Trümmerfeld.",
+		"lastFriendlyBoardableEscaped":"Bevor der Feind näher kommen kann, sind die Reparaturen am Motor abgeschlossen und Sie können entkommen!",
+		"lastFriendlyBoardableLetGo":"Die feindlichen Streitkräfte ziehen sich zurück und lassen Ihr Schiff die Reparaturen abschließen und davonfahren.",
+
+		"finalOutcomeNoShipsLeft":"Das Letzte, woran Sie sich erinnern, ist die plötzliche Beschleunigung, als die Rettungskapsel, in der Sie sich befinden, von Ihrem zum Untergang verurteilten Schiff wegfliegt.",
+		
+		#
+		# OTHER
+		#
+		"creditsLootedReport":"Bergungsteams konnten $creditsLooted Credits aus in den Wracks noch aktiven CPU-Kernen bergen.",
+		"selectedFlagship":"Sie übertragen das Kommando für den bevorstehenden Einsatz an $flagship.",
+		"noSalvageReport":"Es gibt nichts zu retten.",
+		"noSalvageReportPlayerDidNothing":"Ihr $playerFleetOrShip nimmt aufgrund seiner begrenzten Beiträge während der gesamten Begegnung nicht an Bergungsoperationen teil.",
+		"salvageReportPlayer":"Ihr $playerFleetOrShip kann aufgrund seiner Beiträge während der gesamten Begegnung an Bergungsoperationen teilnehmen.",
+		
+		#
+		# CRASH MOTHBALLING
+		#
+		"crashMothballSelectedOneShip":"Ihr Befehl $crashMothballList lautet, alle Kampfsysteme herunterzufahren, um das Risiko von Fehlfunktionen während des Gefechts zu vermeiden. Die Besatzung des Schiffes setzt alle verfügbaren Ressourcen ein, um den reibungslosen Betrieb der Triebwerke zu gewährleisten.",
+		"crashMothballSelectedMultiple":"Ihr Befehl $crashMothballList lautet, alle Kampfsysteme abzuschalten, um das Risiko von Fehlfunktionen während des Gefechts zu vermeiden. Die Besatzung des Schiffes setzt alle verfügbaren Ressourcen ein, um den reibungslosen Betrieb der Triebwerke zu gewährleisten.",
+		"tooltipCrashMothball":"Einige Ihrer Schiffe leiden unter geringer Kampfbereitschaft und könnten während des Gefechts Fehlfunktionen aufweisen.\n\nIhre Kampfsysteme können heruntergefahren werden, um Fehlfunktionen zu vermeiden und den Schiffen zu ermöglichen, mit Höchstgeschwindigkeit zu fliehen.",
+		"tooltipCrashMothballUnavailable":"Alle Ihre Schiffe sind kampfbereit und laufen keine Gefahr, Fehlfunktionen zu erleiden.",
+		
+		#
+		# TOOLTIPS
+		#
+		"tooltipPursue":"Erzwingt eine Schlacht, in der die sich zurückziehenden Streitkräfte versuchen, zu entkommen.",
+		"tooltipPursueAutoresolve":"Befiehlt Ihrem Stellvertreter, die Verfolgung zu übernehmen. Birgt kein Risiko für Ihre Schiffe, ist jedoch wahrscheinlich weniger effektiv, als wenn Sie die Verfolgung selbst leiten würden.",
+		"tooltipPursueLostLast":"Ihre Streitkräfte wurden im letzten Gefecht besiegt und sind nicht in der Lage, die Verfolgung fortzusetzen.",
+		"tooltipPursueStoodDown":"Ihre Streitkräfte haben sich nach dem letzten Gefecht zurückgezogen und sind nicht in der Lage, die Verfolgung fortzusetzen.",
+		"tooltipPursueSeriousLosses":"Ihre Streitkräfte haben bei der letzten Schlacht schwere Verluste erlitten und sind nicht in der Lage, die Verfolgung fortzusetzen.",
+		"tooltipPursueTooSlow":"Die feindliche Flotte ist zu schnell, als dass Ihre Streitkräfte sie einholen könnten.",
+		
+		"tooltipNoReadyShips":"Keines Ihrer Schiffe ist kampfbereit.",
+		"tooltipNoPersonnel":"Es sind keine Marines verfügbar.",
+		
+		"tooltipHarassRetreat":"Verringert die Kampfbereitschaft aller sich zurückziehenden Schiffe, als wären sie im Kampf eingesetzt worden.\n\nVerlangsamt außerdem Ihre Flotte für eine Weile, da Ihre Streitkräfte nach der Störungsaktion Zeit benötigen, um sich neu zu formieren.",
+		"tooltipHarassRetreatUnavailable":"Unfähig, die sich zurückziehenden Streitkräfte zu bedrängen, entweder aufgrund von Rückzug oder weil keine kampfbereiten Schiffe zur Verfügung stehen.",
+		
+		"tooltipLetThemGoNoPenalty":"Lässt die andere Flotte in Ruhe ziehen.\n\nDeine Flotte muss sich nach der Begegnung nicht neu formieren und wird nicht verlangsamt.",
+		"tooltipLetThemGo":"Lässt die andere Flotte in Ruhe ziehen.\n\nDeine Flotte muss sich nach der Begegnung nicht neu formieren und wird nicht verlangsamt.",
+		"tooltipEngage":"Greife die gegnerische Flotte an.\n\nWenn du vor dem Rückzug genügend Schaden anrichtest, kannst du dich zurückziehen, ohne verfolgt zu werden.",
+		"tooltipCleanDisengage":"Beendet den Kampf, ohne dass die Gefahr besteht, von der gegnerischen Flotte verfolgt zu werden.\n\nDa der Feind weiterhin die Kontrolle über den Kampfraum hat, können Sie keine Bergungsmaßnahmen durchführen.\n\nWenn Ihre Flotte keine feindlichen Aktionen unternommen hat, schadet ein Rückzug Ihrem Ansehen bei der gegnerischen Fraktion nicht.",
+		"tooltipHarrassableDisengage":"Beendet den Kampf ohne Verfolgungsgefahr. Die gegnerische Flotte kann Ihren Rückzug dennoch behindern.\n\nDa der Feind weiterhin die Kontrolle über das Schlachtfeld hat, können Sie keine Bergungsmaßnahmen durchführen.\n\nWenn Ihre Flotte keine feindlichen Aktionen unternommen hat, schadet ein Rückzug Ihrem Ansehen bei der gegnerischen Fraktion nicht.",
+		"tootipAttemptToDisengage":"Versuchen Sie, sich aus der Schlacht zurückzuziehen. Die gegnerische Flotte kann Sie verfolgen und zu einer Schlacht zwingen oder Sie ziehen lassen.\n\nDa der Feind weiterhin die Kontrolle über das Schlachtfeld hat, können Sie keine Bergungsmaßnahmen durchführen.\n\nWenn Ihre Flotte keine feindlichen Aktionen unternommen hat, schadet ein Rückzug – ohne Beschädigung der verfolgenden Schiffe – Ihrem Ansehen bei der gegnerischen Fraktion am wenigsten.",
+		
+		"tooltipBoardingAction":"Eine Enteraktion organisieren. Erfordert Marinesoldaten und führt wahrscheinlich zu schweren Personalverlusten.",
+		"tooltipEngageBoardable":"Greifen Sie das Schiff an, bevor es die Reparaturen abschließen kann.\n\nEs besteht die Möglichkeit, dass das Schiff vollständig zerstört wird.",
+		"tooltipLetShipGo":"Lassen Sie das feindliche Schiff die Notfallreparaturen abschließen und sich zurückziehen.",
+		"tooltipHardDockBoarding":"Die der Enterungs-Taskforce zugewiesenen Schiffe nähern sich dem feindlichen Schiff und docken an.\n\nBietet den Angriffsteams die besten Kampfchancen und eine hohe Erfolgswahrscheinlichkeit.\n\nWenn sich das enterte Schiff selbst zerstört, erleiden die an der Enterungsaktion beteiligten Schiffe schweren Schaden und können zerstört werden.",
+		"tooltipLaunchBoarding":"Die Enterungs-Taskforce hält einen sicheren Abstand ein und schickt mit persönlichen Antriebssystemen ausgestattete Angriffsteams los.\n\nGibt den Verteidigern einen erheblichen Kampfvorteil und eine höhere Chance zu entkommen, ohne jedoch die Schiffe der Enterungs-Taskforce zu gefährden.",
+		"tooltipAboutBoardingAction":"Rufen Sie die Task Force zurück und brechen Sie die Enteraktion ab, damit sich das feindliche Schiff zurückziehen kann.", 
+		"tooltipSelectorMarines":"Wählen Sie die Anzahl der Marinesoldaten aus, die Sie der Angriffstruppe zuweisen möchten.",
+		"tooltipSelectorCrew":"Wählen Sie die Anzahl der Besatzungsmitglieder aus, die Sie der Angriffstruppe zuweisen möchten.",
+		"tooltipSelectFlagship":"Wählen Sie das Schiff aus, das Sie im bevorstehenden Gefecht direkt steuern werden.",
+		
+		"ongoingBattleEncounter":"Du gerätst in eine andauernde Schlacht.",
+		"ongoingBattleShareIFF":"Die $alliedFactionAndTheirAllies senden ihre IFF-Codes, mit denen Sie sich auf ihrer Seite in den Kampf einbringen können, wenn Sie sich dazu entschließen.",
+		"ongoingBattleNoJoin":"Keine der beiden Seiten vertraut Ihnen genug, um Ihnen IFF-Codes mitzuteilen oder gemeinsam mit Ihnen zu kämpfen, und Sie können sich keiner der beiden Seiten im Kampf anschließen.",
+		"ongoingBattleNoJoinTransponder":"Keine der beiden Seiten vertraut Ihnen genug, um Ihnen IFF-Codes mitzuteilen, aber das wird sich wahrscheinlich ändern, wenn Sie mit eingeschaltetem Transponder zurückkommen.",
+		#"playerOutFirstEscapeWin":"Ihre Streitkräfte verlassen das Schlachtfeld vor allen Ihren Verbündeten, die dennoch in der Lage sind, die feindlichen Streitkräfte in die Flucht zu schlagen.",
+		#"playerOutFirstEscapeLoss":"Ihre Streitkräfte verlassen das Schlachtfeld vor allen Ihren Verbündeten, die kurz darauf ebenfalls entkommen können.",
+		#"playerOutFirstEngageWin":"Ihre Streitkräfte ziehen sich vor Ihren Verbündeten aus dem Kampfgebiet zurück, die dennoch in der Lage sind, die Schlacht zu gewinnen.",
+		#"playerOutFirstEngageLoss":"Ihre Streitkräfte ziehen sich vor allen Ihren Verbündeten aus dem Kampfgebiet zurück und haben die Möglichkeit, relativ sicher zu fliehen, obwohl Ihre Verbündeten kurz darauf besiegt werden.",
+		#"playerOutFirstPursuitWin":"Ihre Streitkräfte ziehen sich vor Ihren Verbündeten aus dem Kampfgebiet zurück, die es dennoch schaffen, die sich zurückziehenden feindlichen Streitkräfte zu vertreiben.",
+		#"playerOutFirstPursuitLoss":"Ihre Streitkräfte ziehen sich vor Ihren Verbündeten aus dem Kampfgebiet zurück, und die gegnerische Seite kann kurz darauf den Spieß umdrehen und sie besiegen.",
+		"playerOutFirstEscapeWin":"Ihre Streitkräfte verlassen das Schlachtfeld vor allen Ihren Verbündeten, die dennoch in der Lage sind, die feindlichen Streitkräfte in die Flucht zu schlagen.",
+		"playerOutFirstEscapeLoss":"Ihre Streitkräfte verlassen das Schlachtfeld vor allen Ihren Verbündeten, die kurz darauf ebenfalls entkommen können.",
+		"playerOutFirstEngageWin":"Ihre Streitkräfte ziehen sich vor Ihren Verbündeten aus dem Kampfgebiet zurück, die dennoch in der Lage sind, die Schlacht zu gewinnen.",
+		"playerOutFirstEngageLoss":"Ihre Streitkräfte ziehen sich vor allen Ihren Verbündeten aus dem Kampfgebiet zurück und haben die Möglichkeit, sich in relativer Sicherheit zurückzuziehen.",
+		"playerOutFirstPursuitWin":"Ihre Streitkräfte ziehen sich vor Ihren Verbündeten aus dem Kampfgebiet zurück.",
+		"playerOutFirstPursuitLoss":"Ihre Streitkräfte ziehen sich vor Ihren Verbündeten aus dem Kampfgebiet zurück.",
+		"ongoingBattleEngage":"Die $alliedFactionAndTheirAllies ruecken vor, um die $enemyFactionAndTheirAllies anzugreifen.",
+		"ongoingBattleStation":"Die $alliedFactionAndTheirAllies behaupten sich gegenueber den $enemyFactionAndTheirAllies.",
+		"ongoingBattlePursue":"Die $alliedFactionAndTheirAllies verfolgen die sich zurueckziehenden $enemyFactionAndTheirAllies.",
+		"ongoingBattleHarass":"Die $alliedFactionAndTheirAllies bedrängen die sich zurückziehenden $enemyFactionAndTheirAllies, verursachen dadurch erhebliche Störungen, zwingen sie jedoch letztendlich nicht zum Kampf.",
+		"ongoingBattleLetGo":"Der $alliedFactionAndTheirAllies ließ den $enemyFactionAndTheirAllies ohne weitere Zwischenfälle ziehen.",
+		"ongoingBattleDisengage":"Die $alliedFactionAndTheirAllies versuchen, sich von den $enemyFactionAndTheirAllies. zu trennen.",
+		#"ongoingBattleJoinEnemyWillFlee":"Ihre Streitkräfte schließen sich der Schlacht an, und die nun unterlegenen $enemyFactionAndTheirAllies versuchen, sich zurückzuziehen.",
+		#"ongoingBattleJoinAlliesWillFight":"Ihre Streitkräfte schließen sich der Schlacht an, und durch diese Wendung der Ereignisse ermutigt, wenden sich die $alliedFactionAndTheirAllies dem Feind zu.",
+		#"ongoingBattleJoinTurnTables":"Ihre Streitkräfte schließen sich der Schlacht an und verschieben das Gleichgewicht drastisch. Die $alliedFactionAndTheirAllies wenden sich gegen die $enemyFactionAndTheirAllies, die ihrerseits versuchen, sich zurückzuziehen.",
+	},
+
+
+	"jumpPointInteractionDialog":{
+		# Available tokens:
+		#
+		# $fleetOrShip "fleet", "ship" if only one ship in fleet, "fighter wing" if only one fighter wing (and nothing else)
+		
+		"approach":"Ihr $fleetOrShip nähert sich dem Sprungpunkt.",
+		"starAnchor":"Das Springen durch das vom Gravitationsfeld des Sterns erzeugte Wurmloch ist eine ziemliche navigatorische Meisterleistung. Nur die Erfahrensten würden es überhaupt versuchen, und selbst dann sind die Ergebnisse unvorhersehbar.",
+		"starAnchorUnusable":"Sie können diesen Sprungpunkt nicht verwenden.",
+		"noFuel":"Ihr $fleetOrShip hat keinen Treibstoff mehr und kann keinen Sprung mehr durchführen.",
+		"noExits":"Der Sprungpunkt scheint keine funktionsfähigen Ausgänge zu haben und ist praktisch unbrauchbar.",
+	},
+	
+	
+	"planetInteractionDialog":{
+		# Available tokens:
+		#
+		# $fleetOrShip "fleet", "ship" if only one ship in fleet, "fighter wing" if only one fighter wing (and nothing else)
+		# $planetName
+		"approach":"Ihr $fleetOrShip nähert sich $planetName.",
+	},
+	
+
+	"campaignHelp":{
+		"chmNewgame_text":"Willkommen zur Starsector-Kampagne! \n\n Mit F5 kannst du schnell speichern und mit F9 schnell laden. \n\n Versuche, Flotten zu meiden, die viel größer sind als deine oder über größere Schiffe verfügen, und denk bitte daran, dass es sich um ein laufendes Projekt handelt, sodass gelegentlich Fehler auftreten können.\n\nViel Glück!",
+		"chmNewgame_dismiss":"Abweisen",
+		
+		"chmNewgameIron_text":"Willkommen zur Starsector-Kampagne!\n\nDa Sie im Iron-Modus spielen, können Sie das Spiel nur speichern, wenn Sie es beenden, und Sie können kein anderes Spiel laden, ohne zuvor Ihr aktuelles Spiel zu beenden (und zu speichern).\n\n Versuchen Sie, Flotten zu vermeiden, die viel größer sind als Ihre eigene oder über größere Schiffe verfügen, und denken Sie bitte daran, dass es sich um eine noch in der Entwicklung befindliche Version handelt, sodass gelegentlich Fehler auftreten können.\n\n Viel Glück!",
+		"chmNewgameIron_dismiss":"Abweisen",
+		
+		"chmDeployCritCR_text":"Einige der für den Einsatz vorgesehenen Schiffe weisen eine gefährlich niedrige Kampfbereitschaft auf (unter 20 %).\n\nDie Aufrüstung der Systeme dieser Schiffe auf Kampfstärke würde wahrscheinlich zu kritischen Fehlfunktionen führen – mit Schäden, der Deaktivierung einiger Waffen und Triebwerke für die Dauer des Gefechts und weiteren kritischen Fehlfunktionen während des Einsatzes.\n\nDas Eingehen dieser Risiken – zu denen auch die vollständige Zerstörung eines Schiffes gehört – ist in der Regel eine Maßnahme der letzten Wahl.",
+		"chmDeployCritCR_action":"Mit der Bereitstellung fortfahren",
+		"chmDeployCritCR_dismiss":"Überdenken",
+		
+		"chmDeployLowCR_text":"Einige der für den Einsatz vorgesehenen Schiffe weisen eine geringe Einsatzbereitschaft auf (unter 40 %).\n\nIhre Waffensysteme und Triebwerke sind anfällig für Fehlfunktionen und können bei längerem Einsatz vorübergehend ausfallen.",
+		"chmDeployLowCR_action":"Mit der Bereitstellung fortfahren",
+		"chmDeployLowCR_dismiss":"Überdenken",
+		
+		"chmDeployCostsCR_text":"Sie können zu Beginn jeder Schlacht auswählen, welche Schiffe Sie einsetzen möchten, und im Laufe der Schlacht Verstärkung einsetzen.\n\nDer Einsatz eines Schiffes verringert dessen Kampfbereitschaft um einen festen Wert. Außerdem verlieren Schiffe nach Ablauf ihrer maximalen Einsatzbereitschaft allmählich an Kampfbereitschaft.\n\nDie Wiederherstellung der Kampfbereitschaft dauert einige Zeit und verbraucht wertvolle Vorräte.",
+		"chmDeployCostsCR_dismiss":"Abweisen",
+		
+		"chmWeaponGroups_text":"Sie haben Änderungen an der Ausrüstung des Schiffes vorgenommen, aber die Waffengruppen nicht angepasst.\n\nDie Waffen werden automatisch Gruppen zugewiesen, wenn Sie das Schiff für den Kampf einsetzen, aber es ist ratsam, die Zuweisungen manuell vorzunehmen.",
+		"chmWeaponGroups_action":"Waffengruppen anpassen",
+		"chmWeaponGroups_dismiss":"Macht nichts.",
+		
+		#"chmOpenTrade_text":"Im Fracht-/Handelsbildschirm können Sie:\n\n- Mit der linken Maustaste klicken, um einen Stapel aufzunehmen\n- Mit gedrückter Umschalttaste klicken, um Gegenstände einzeln aus einem Stapel aufzunehmen\n- Um eine bestimmte Menge aufzunehmen, halten Sie die Umschalttaste gedrückt, klicken Sie und ziehen Sie den Mauszeiger.\n- Um einen ganzen Stapel zu übertragen, ohne ihn aufzunehmen, klicken Sie bei gedrückter Strg-Taste.\n- Halten Sie die Alt-Taste gedrückt und bewegen Sie die Maus, um mehrere Stapel schnell zu übertragen.",
+		"chmOpenTrade_text":"Im Fracht-/Handelsbildschirm können Sie:\n\n- Mit der linken Maustaste klicken, um einen Stapel aufzunehmen\n- Mit gedrückter Umschalttaste klicken, um Gegenstände einzeln aus einem Stapel aufzunehmen\n- Um eine bestimmte Menge aufzunehmen, halten Sie die Umschalttaste gedrückt, klicken Sie und ziehen Sie den Mauszeiger.\n- Um einen ganzen Stapel zu übertragen, ohne ihn aufzunehmen, klicken Sie bei gedrückter Strg-Taste.",
+		"chmOpenTrade_dismiss":"Abweisen",
+		
+		"chmHyperStorm_text":"Ihre Flotte wurde von einem Hyperraumsturm getroffen! Eines Ihrer Schiffe wurde beschädigt und seine Kampfbereitschaft ist eingeschränkt.\n\nStürme können Ihre Flotte auch vom Kurs abbringen, aber mit einem „Notmanöver” kann Ihre Flotte leichter wieder auf Kurs kommen und Stürme durchbrechen.",
+		"chmHyperStorm_dismiss":"Abweisen",
+	
+		"chmShipPurchase_text":"Herzlichen Glückwunsch, Sie haben gerade ein neues Schiff gekauft!\n\nEs sind noch keine Waffen oder Rumpfmodifikationen installiert, daher sollten Sie es ausrüsten.\n\nSie müssen auch sicherstellen, dass Sie über genügend Personal für die Besatzung verfügen.",
+		"chmShipPurchase_action":"Öffnen Sie den Umrüstungsbildschirm.",
+		"chmShipPurchase_dismiss":"Abweisen",
+		
+		"chmWingPurchase_text":"Herzlichen Glueckwunsch, Sie haben gerade ein neues Jagdgeschwader gekauft!\n\nDie Einsatzbereitschaft des Jagdgeschwaders entspricht der Anzahl der verfuegbaren Ersatz-Jagdflugzeugchassis, die jedoch nur verwendet werden koennen, wenn Sie ein Schiff mit einem Flugdeck in Ihrer Flotte haben.\n\nNeue Jagdflugzeuge starten von einem nahe gelegenen Flugdeck, um Verluste im Kampf zu ersetzen. Solange Ihre Flotte ueber ein Schiff mit geeigneten Reparatureinrichtungen (d. h. einem Flugdeck) verfuegt, kann ein Jagdgeschwader nicht vollstaendig verloren gehen, selbst wenn seine Kampfbereitschaft auf null reduziert ist.",
+		"chmWingPurchase_dismiss":"Abweisen",
+		
+		"chmRefitOnStation_text":"Wenn Sie ein Schiff umrüsten, während es an einer Raumstation angedockt ist, können Sie sowohl die Waffen in Ihrem Frachtraum als auch die an der Station zum Kauf angebotenen Waffen montieren.\n\nWenn Sie die Änderungen an der Ausrüstung des Schiffes rückgängig machen (oder einfach die gekauften Waffen demontieren), werden Ihnen die verwendeten Credits zurückerstattet, jedoch nur, wenn Sie den Umrüstungsbildschirm nicht verlassen haben.",
+		"chmRefitOnStation_dismiss":"Abweisen",
+		
+		"chmLootOverCapacity_text":"Warnung: Sie nehmen mehr Bergungsgut mit, als Ihre Flotte transportieren kann.\n\nDies führt zu einem deutlich erhöhten täglichen Verbrauch an Vorräten und einer verringerten Reisegeschwindigkeit.\n\nEs wird empfohlen, entweder weniger Bergungsgut mitzunehmen oder eine nahegelegene Station anzusteuern, um den Überschuss zu verkaufen.",
+		"chmLootOverCapacity_dismiss":"Abweisen",
+		
+		"chmOverCargoCapacity_text":"Ihre Flotte transportiert mehr Fracht, als sie aufnehmen kann.\n\nDies führt zu einem deutlich erhöhten täglichen Verbrauch an Vorräten und einer verringerten Reisegeschwindigkeit.\n\nEs wird empfohlen, entweder einen Teil der Fracht jetzt abzuwerfen oder schnell zu einer Station zu fliegen, um die überschüssige Fracht zu verkaufen. Sie können Fracht über den Bildschirm „Crew/Fracht“ abwerfen.",
+		"chmOverCargoCapacity_action":"Öffnen Sie den Crew-/Frachtbildschirm.",
+		"chmOverCargoCapacity_dismiss":"Abweisen",
+		
+		"chmOverFuelCapacity_text":"Ihre Flotte transportiert mehr Treibstoff, als sie aufnehmen kann.\n\nDies führt zu einem deutlich erhöhten täglichen Verbrauch und einer verringerten Reisegeschwindigkeit.\n\nEs wird empfohlen, entweder einen Teil des Treibstoffs jetzt abzuwerfen oder schnell zu einer Station zu fliegen, um den Überschuss zu verkaufen. Sie können Treibstoff über den Crew-/Frachtbildschirm abwerfen.",
+		"chmOverFuelCapacity_action":"Öffnen Sie den Crew-/Frachtbildschirm.",
+		"chmOverFuelCapacity_dismiss":"Abweisen",
+		
+		"chmOverCrewCapacity_text":"Ihre Flotte befördert mehr Personal, als sie Kapazität hat.\n\nDies führt zu einem stark erhöhten täglichen Verbrauch an Vorräten und einer verringerten Reisegeschwindigkeit.\n\nEs wird empfohlen, dass Sie zu einem nahe gelegenen Markt fahren, damit Sie sie dort absetzen können.",
+		"chmOverCrewCapacity_action":"Öffnen Sie den Crew-/Frachtbildschirm.",
+		"chmOverCrewCapacity_dismiss":"Abweisen",
+		
+		"chmLowFuel_text":"Deiner Flotte geht der Treibstoff aus.\n\nWenn sie im Hyperraum keinen Treibstoff mehr hat, treibt sie zum naechsten Sternsystem und kann dort stranden, wenn du keinen neuen Treibstoff beschaffen kannst.",
+		"chmLowFuel_dismiss":"Abweisen",
+		
+		"chmLowSupplies_text":"Ihre Flotte hat nur noch wenige Vorräte.\n\nWenn die Vorräte aufgebraucht sind, werden alle Reparaturen eingestellt und die Schiffe verlieren mit der Zeit ihre Kampfbereitschaft. Nach mehr als ein paar Tagen ohne Vorräte besteht für die Flotte das Risiko von Unfällen, die von geringfügigen (z. B. Verlust eines Teils der Ladung) bis zu kritischen (Verlust eines Schiffes) reichen können.\n\nEs wird empfohlen, so schnell wie möglich weitere Vorräte zu beschaffen.\n\nUm den Verbrauch an Vorräten zu reduzieren, können Sie alle laufenden Schiffsreparaturen aussetzen. Als letzte Möglichkeit, um mehr Vorräte zu erhalten, können Sie eines Ihrer Schiffe versenken.\n\nDie entsprechenden Befehle finden Sie auf dem Flottenbildschirm.",
+		"chmLowSupplies_action":"Öffnen Sie den Flottenbildschirm.",
+		"chmLowSupplies_dismiss":"Abweisen",
+		
+		"chmNotEnoughCrew_text":"Ihre Flotte verfügt nicht über genügend Personal, um alle Ihre Schiffe vollständig zu bemannen.\n\nDies führt zu einer verminderten Kampfbereitschaft und einer verlangsamten Wiederherstellung der Kampfbereitschaft der betroffenen Schiffe.\n\nSie können die verfügbare Besatzung auf bestimmte Schiffe konzentrieren, indem Sie einige Schiffe über den Flottenbildschirm stilllegen. Es wird empfohlen, so schnell wie möglich mehr Besatzungsmitglieder in einer nahe gelegenen Raumstation anzuheuern.",
+		"chmNotEnoughCrew_action":"Öffnen Sie den Flottenbildschirm.",
+		"chmNotEnoughCrew_dismiss":"Abweisen",
+		
+		"chmSomeLowCR_text":"Einige Schiffe Ihrer Flotte weisen eine geringe Kampfbereitschaft auf (unter 40 %).\n\nIhre Waffensysteme und Triebwerke können bei längerem Einsatz Fehlfunktionen aufweisen und vorübergehend ausfallen, wodurch ihre Kampfkraft beeinträchtigt wird.\n\nEs wird empfohlen, diese Schiffe vor dem Einsatz im Kampf wieder instand zu setzen. Schiffe gewinnen mit der Zeit ihre Kampfbereitschaft zurück. Freundliche Stationen bieten eine schnelle Möglichkeit, dies zu tun und Reparaturen durchzuführen sowie bei Bedarf zusätzliche Besatzungsmitglieder anzuheuern.\n\nSie können die Kampfbereitschaft Ihrer Schiffe im Flottenbildschirm überprüfen.",
+		"chmSomeLowCR_action":"Öffnen Sie den Flottenbildschirm.",
+		"chmSomeLowCR_dismiss":"Abweisen",
+		
+		"chmSomeCritCR_text":"Einige Schiffe Ihrer Flotte weisen eine gefährlich niedrige Kampfbereitschaft auf (unter 20 %).\n\nDer Einsatz dieser Schiffe im Kampf führt wahrscheinlich zu kritischen Fehlfunktionen – es kommt zu Schäden, einige Waffen und Triebwerke fallen für die Dauer des Kampfes aus und es kommt zu weiteren kritischen Fehlfunktionen während des Einsatzes.\n\nEs wird empfohlen, diese Schiffe erst wieder einsatzbereit zu machen, bevor Sie sie im Kampf einsetzen. Schiffe gewinnen mit der Zeit ihre Kampfbereitschaft zurück. Freundliche Stationen bieten eine schnelle Möglichkeit, dies zu tun und Reparaturen durchzuführen sowie bei Bedarf zusätzliche Besatzungsmitglieder anzuheuern.\n\nSie können die Kampfbereitschaft Ihrer Schiffe im Flottenbildschirm überprüfen.",
+		"chmSomeCritCR_action":"Öffnen Sie den Flottenbildschirm.",
+		"chmSomeCritCR_dismiss":"Abweisen",
+		
+		"chmAllCritCR_text":"Alle Schiffe Ihrer Flotte weisen eine gefährlich niedrige Kampfbereitschaft auf (unter 20 %).\n\nDer Einsatz dieser Schiffe im Kampf führt wahrscheinlich zu kritischen Fehlfunktionen – es kommt zu Schäden, einige Waffen und Triebwerke fallen für die Dauer des Kampfes aus und es kommt zu weiteren kritischen Fehlfunktionen während des Einsatzes.\n\nEs wird empfohlen, Ihre Flotte sich erst erholen zu lassen, bevor Sie in den Kampf ziehen. Schiffe gewinnen mit der Zeit ihre Kampfbereitschaft zurück, und befreundete Stationen bieten eine schnelle Möglichkeit, dies zu tun und Reparaturen durchzuführen sowie bei Bedarf zusätzliche Besatzungsmitglieder anzuheuern.\n\nSie können die Kampfbereitschaft Ihrer Schiffe im Flottenbildschirm überprüfen.",
+		"chmAllCritCR_action":"Öffnen Sie den Flottenbildschirm.",
+		"chmAllCritCR_dismiss":"Abweisen",
+		
+		"chmSupplyUseAfterBattle_text":"Der Verbrauch Ihrer Flotte ist gerade gestiegen!\n\nDie Wiederherstellung der Kampfbereitschaft, um Schiffe in den Kampf zu schicken, kostet Vorräte, ebenso wie die Reparatur von Kampfschäden.\n\nUm den Verbrauch von Vorräten zu reduzieren, können Reparaturen und die Wiederherstellung der Kampfbereitschaft von Schiffen über den Flottenbildschirm ausgesetzt werden.",
+		"chmSupplyUseAfterBattle_action":"Öffnen Sie den Flottenbildschirm.",
+		"chmSupplyUseAfterBattle_dismiss":"Abweisen",
+		
+		"chmRiskOfAccidents_text":"Einige Schiffe Ihrer Flotte sind aufgrund ihrer Kampfbereitschaft von 0 % unfallgefährdet.\n\nUnfälle können ein Schiff beschädigen oder sogar zerstören.\n\nEs wird empfohlen, diese Schiffe entweder stillzulegen oder ihre Kampfbereitschaft so schnell wie möglich wiederherzustellen.",
+		"chmRiskOfAccidents_dismiss":"Abweisen",
+		
+		"chmEnteredHyper_text":"Ihre Flotte ist in den Hyperraum eingetreten!\n\nSchiffe, die im Hyperraum reisen, verbrauchen Treibstoff proportional zur zurückgelegten Strecke. Flotten, denen der Treibstoff ausgeht, treiben zum nächsten Sternensystem und können dort stranden.",
+		"chmEnteredHyper_dismiss":"Abweisen",
+	
+		"chmRefitCRLoss_text":"Durch die Umrüstung eines Schiffes im Weltraum verliert es einen Teil seiner Kampfbereitschaft.\n\nDer Umfang des Verlusts hängt vom Ausmaß der vorgenommenen Änderungen ab und wird durch den abgeblendeten Teil der Kampfbereitschaftsleiste angezeigt.\n\nDie Umrüstung an einem Markt oder einer Station beeinträchtigt die Kampfbereitschaft nicht.",
+		"chmRefitCRLoss_dismiss":"Abweisen",
+	},
+	
+	
+	
+		
+}
+
+
+
+
+
+
+

@@ -1,0 +1,134 @@
+{
+	"codex":{
+		"damage_kinetic":{
+			"title":"Kinetischer Schaden",
+			"body":"Kinetischer Schaden ist sehr gut gegen Schilde, aber schwach gegen Panzerung.",
+		},
+		"damage_highexplosive":{
+			"title":"Hochexplosiver Schaden",
+			"body":"Hochexplosiver Schaden ist sehr gut gegen Panzerung, aber schwach gegen Schilde.",
+		},
+		"damage_fragmentation":{
+			"title":"Splitterschaden",
+			"body":"Splitterschaden ist gegen Panzerung und Schilde sehr schwach. Waffen mit Splitterschaden haben jedoch meist sehr hohen DPS und sind dadurch verheerend gegen leicht gepanzerte, ungeschirmte Ziele wie leichte Jaeger und Raketen.\n\nEr ist auch sehr effektiv gegen Schiffe, deren Panzerung im Kampf bereits aufgerieben wurde.",
+		}, 
+		"damage_energy":{
+			"title":"Energieschaden",
+			"body":"Energieschaden ist gleich effektiv gegen Schilde und Panzerung.",
+		},
+		"damage_other":{
+			"title":"Anderer Schaden",
+			"body":"Diese Waffe ist speziell. Wenn du das hier siehst, ist es wahrscheinlich ein Bug.",
+		}, 
+	},
+	"warroom":{
+		#"fleetPoints":{
+		#	"title":"Bereitstellungspunkte",
+		#	"body":"Sie benötigen verfügbare Einsatzpunkte, um Ihre Reserven im Kampf einzusetzen. Wenn Sie sich zurückziehen oder Schiffe verlieren, erhalten Sie die für deren Einsatz verwendeten Punkte zurück.",
+		#},
+		#"commandPoints":{
+		#	"title":"Befehlspunkte",
+		#	"body":"Sie benötigen Kommandopunkte, um Aufträge zu erstellen und Ihrer Flotte direkte Befehle zu erteilen.\n\nSobald diese aufgebraucht sind, können Sie keine Befehle mehr erteilen, aber Sie können Ihrer Flotte dennoch befehlen, den Feind nach Belieben anzugreifen, indem Sie alle bestehenden Aufträge stornieren.\n\nJedes Mal, wenn Ihre Streitkräfte ein Ziel erobern, erhalten Sie einige Kommandopunkte.",
+		#},
+		"pause":{
+			"title":"Pause",
+			"body":"Pausiert das Spiel.",
+		},
+		"play":{
+			"title":"Fortsetzen",
+			"body":"Setzt das Spiel fort.",
+		},
+		"combatTime":"Vergangene Zeit, waehrend beide Flotten Kontakt miteinander haben.\n\nDie Spitzenleistungszeit von Verstaerkungen wird um die Haelfte dieser Kampfzeit reduziert.",
+	},
+	
+	"fleetScreen":{
+		"tooltipCaptain":{
+			"title":"Kapitaen zuweisen",
+			"body":"Weise diesem Schiff einen Kapitaen zu (dich selbst oder einen Offizier). Das Schiff profitiert dann von den Skills des Kapitaens.",
+		},
+		"tooltipAdmin":{
+			"title":"Administrator zuweisen",
+			"body":"Weise dieser Kolonie einen Administrator zu (oder dich selbst). Die Kolonie profitiert dann von dessen Skills.",
+		},
+		"tooltipAdminNonPlayer":{
+			"title":"Administrator",
+			"body":"Diese Kolonie wird von keinem nennenswerten Administrator regiert.",
+		},
+		"tooltipBuy":{
+			"title":"Kaufen",
+			"body":"Kaufe dieses %s fuer %d Credits.",
+		},
+		"tooltipSell":{
+			"title":"Verkaufen",
+			"body":"Verkaufe dieses %s fuer %d Credits.",
+		},
+		"tooltipTake":{
+			"title":"Nehmen",
+			"body":"Nimm dieses %s.",
+		},
+		"tooltipGive":{
+			"title":"Einlagern",
+			"body":"Uebertrage dieses %s aus deiner Flotte. Die Kampfbereitschaft bleibt waehrend der Lagerung unveraendert.",
+		},
+		"tooltipMothball":{
+			"title":"Einmotten",
+			"body":"Eingemottete %ss koennen nicht im Kampf eingesetzt oder repariert werden und bieten keine Treibstoff-, Fracht- oder Personal-Kapazitaet.\n\nDas Einmotten setzt die Kampfbereitschaft auf null. Zur Wiederherstellung werden Zeit und Vorrate benoetigt.",
+		},
+		"tooltipUnmothball":{
+			"title":"Einmotten",
+			"body":"Eingemottete %ss koennen nicht im Kampf eingesetzt oder repariert werden und bieten keine Treibstoff-, Fracht- oder Personal-Kapazitaet.\n\nDie Wiederherstellung der Kampfbereitschaft dieses Schiffs nach dem Ausmotten verbraucht %s Vorrate ueber %s Tag(e).",
+		},
+		"tooltipScuttle":{
+			"title":"Verschrotten",
+			"body":"Schlachte dieses %s aus und erhalte %d Vorrate, %d Treibstoff und %d schwere Maschinen.",
+		},
+		"tooltipSuspendRepairs":{
+			"title":"Reparatur und Erholung aussetzen",
+			"body":"Verhindert, dass dieses %s Reparaturen durchfuehrt oder Kampfbereitschaft wiederherstellt. Vollstaendige Reparaturen und CR-Erholung verbrauchen ungefaehr %s Vorrate ueber %s Tage, falls fortgesetzt.",
+		},
+		"tooltipSuspendRepairsNotNeeded":{
+			"title":"Reparatur und Erholung aussetzen",
+			"body":"Verhindert, dass dieses %s Reparaturen durchfuehrt oder Kampfbereitschaft wiederherstellt. Dieses %s benoetigt derzeit weder Reparaturen noch CR-Erholung.",
+		},
+		"tooltipRefit":{
+			"title":"Umruesten",
+			"body":"Aendere die Waffen und Hullmods auf diesem Schiff.",
+		},
+		"tooltipLogisticalPriority":{
+			"title":"Logistische Prioritaet",
+			"body":"%ss mit logistischer Prioritaet erhalten zuerst verfuegbare Crew und Vorrate fuer Reparaturen.",
+		},
+		"tooltipCrewElite":{
+			"title":"Elite",
+			"body":"Besetze dieses %s mit dem bestmoeglichen Personal.",
+		},
+		"tooltipCrewVeteran":{
+			"title":"Veteran",
+			"body":"Besetze dieses %s nach Moeglichkeit nur mit Veteranen-Crew oder darunter.", 
+		},
+		"tooltipCrewRegular":{
+			"title":"Regulaer",
+			"body":"Besetze dieses %s nach Moeglichkeit nur mit regulaerer Crew oder darunter.",
+		},
+		"tooltipCrewGreen":{
+			"title":"Unerfahren",
+			"body":"Besetze dieses %s nach Moeglichkeit nur mit unerfahrener Crew.",
+		},
+		"tooltipCrewBar":{
+			"title":"",
+			"body":"Crew-Anteil auf diesem %s.",
+		},
+	},
+	"logistics":{
+		"marines":"Anzahl der Marines in der Flotte.",
+		"crew":"Anzahl der Crew in der Flotte und die Anzahl, die noetig ist, um die Mindestanforderungen aller Schiffe zu erfuellen.",
+		"supplies":"Verfuegbare Vorrate und Vorratsverbrauch pro Tag.",
+		"credits":"Verfügbare Credits.",
+	},
+	"misc":{
+		"jumpPointNormal":"Sprungpunkte koennen fuer den Transit zwischen Hyperraum und Normalraum genutzt werden. Einige Sprungpunkte fuehren auch zu weiteren Zielen.",
+		"jumpPointStar":"Der Gravitationsbrunnen eines Sterns ist tief genug, um einen einseitigen Austritt aus dem Hyperraum zu erlauben. Die Nutzung ist jedoch extrem schwierig und gefaehrlich.",
+		"jumpPointGasGiant":"Der Gravitationsbrunnen eines Gasriesen ist haeufig tief genug, um einen einseitigen Austritt aus dem Hyperraum zu erlauben.",
+	},
+	
+}
