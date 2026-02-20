@@ -57,7 +57,7 @@
 		
 		"baseCommander":{"name":"Basis-Kommandant"},
 		"stationCommander":{"name":"Stationskommandant"},
-		"outpostCommander":{"name":"Aussenposten-Kommandant"},
+			"outpostCommander":{"name":"Außenposten-Kommandant"},
 		"portmaster":{"name":"Hafenmeister"},
 		
 		"intelligenceDirector":{"name":"Direktor der Aufklärung"},
@@ -136,7 +136,6 @@
 		
 	},
 }
-
 
 
 
