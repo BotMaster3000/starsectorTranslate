@@ -1,9 +1,9 @@
 {
 	tips:[
 {"freq":0, "tip":"Du kannst die Häufigkeit von Tipps ändern, indem du statt eines Strings ein JSON-Objekt verwendest. Dieser Tipp hat z.B. die Häufigkeit 0 und wird nie angezeigt. Der Standardwert für freq ist 1."},
-"Senke deine Schilde, um \\"harten\\" Flux abzubauen, der durch Schildtreffer entsteht.",
+"Senke deine Schilde, um \"harten\" Flux abzubauen, der durch Schildtreffer entsteht.",
 "Schilde und Waffen erzeugen beide Flux. Wenn du die Schilde senkst und einige Treffer auf Hülle und Panzerung hinnimmst, steigt deine dauerhafte Feuerkraft. Das ist besonders bei stark gepanzerten Schiffen wichtig.", 
-"Strahlwaffen verursachen an Schilden \\"weichen\\" Flux, der ohne Senken der Schilde abgebaut werden kann.",
+"Strahlwaffen verursachen an Schilden \"weichen\" Flux, der ohne Senken der Schilde abgebaut werden kann.",
 "Drücke TAB, um die Befehlsoberfläche umzuschalten. Nutze sie, um deiner Flotte Befehle zu geben.",
 "Wenn ein Schiff ein anderes eskortiert, ist seine Beweglichkeit eingeschränkt. Nutze diesen Befehl mit Vorsicht.",
 "Wenn deine Schilde zu viel Schaden nehmen, überlädt das Schiff und Waffen sowie Schilde sind für einige Sekunden deaktiviert.",
@@ -25,7 +25,7 @@
 "Zum Verschieben der Kampfkarte nutze Rechtsklick+Ziehen oder die Pfeiltasten.",
 "Torpedos auf Punkt-Blank-Reichweite zu starten kann für dein Schiff gefährlich sein.",
 "Schiffe mit der Kennung (D) sind minderwertige Varianten normaler Hüllen.",
-"Das Einsetzen von Schiffen im Kampf reduziert ihre Kampfbereitschaft (\\"CR\\"), deren Wiederherstellung Vorrate kostet.",
+"Das Einsetzen von Schiffen im Kampf reduziert ihre Kampfbereitschaft (\"CR\"), deren Wiederherstellung Vorrate kostet.",
 "Mehr Schiffe als nötig einzusetzen kann mehr Vorrate kosten, als der Kampf einbringt.",
 "Schiffe verbrauchen Vorrate für Wartung gemäss ihrem Wert Vorrate/Monat und zusätzlich bei CR-Erholung oder Reparaturen.",
 "Deine Flotte kann Fracht, Crew oder Treibstoff über die Kapazitätsgrenze hinaus transportieren - auf Kosten höheren Vorratsverbrauchs.",
