@@ -223,3 +223,13 @@ Known pitfall from this project:
   - `manuell` -> `manüll`
   - `aktuell` -> `aktüll`
 - Always use targeted normalization, never blanket global replacement.
+
+==================================================
+11) Mission Text Coverage
+==================================================
+
+For each translated mission folder under `ger/data/missions/*/`, include:
+- `descriptor.json` (title/difficulty metadata)
+- `mission_text.txt` (briefing/lore text shown in mission UI)
+
+Do not ship mission folders with only one of those files translated.

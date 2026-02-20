@@ -1,0 +1,6 @@
+Ort: Irgendwo in der Mediosolar Expanse
+Datum: Unbekannt
+
+Steuere in dieser Mission ein Großkampfschiff, bei dem zwei gleich starke, zufällig generierte Flotten gegeneinander antreten.
+
+Klicke in der Liste auf die Mission, um die Flotten neu zu würfeln.

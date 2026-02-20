@@ -1,5 +1,7 @@
 # Starsector Translation Pack Workspace
 
+This repository is made for Starsector game version `0.98a-RC8`.
+
 This repository contains Starsector `data` files and language-specific translation deltas.
 
 ## Structure
@@ -30,6 +32,7 @@ To apply a translation, copy the language folder's `data` contents into the game
 ## Maintainer Notes
 
 - `ger/data/` is intentionally delta-only (changed files only).
+- Mission localization includes both `descriptor.json` and `mission_text.txt` in `ger/data/missions/*/`.
 - `data/strings/descriptions.csv` requires cp1252-safe handling in tooling.
 - Machine translation should preserve placeholders (`$...`, `%...`, `\\n`) and locked proper nouns.
 - Avoid global `ae/oe/ue -> ä/ö/ü` replacements; apply targeted fixes to prevent false positives (e.g. `feuert`/`Abfeuern`).
