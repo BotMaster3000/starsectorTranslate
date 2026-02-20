@@ -1,0 +1,157 @@
+Starsector Translation Guide (Repository-Specific)
+Generated: 2026-02-20
+
+Purpose
+- Identify which files should be translated.
+- Identify which terms/tokens must not be translated.
+- Provide a consistent glossary policy for proper nouns (factions, places, organizations, lore terms).
+
+==================================================
+1) What to Translate (High Priority)
+==================================================
+
+Primary text/lore/UI content:
+- data/strings/strings.json
+- data/strings/tooltips.json
+- data/strings/tips.json
+- data/strings/descriptions.csv
+- data/strings/ship_names.json
+- data/codex/*.txt
+- data/codex/text_codex_entries.csv
+- data/missions/*/mission_text.txt
+- data/missions/*/descriptor.json (usually title)
+- data/campaign/rules.csv (text and option labels only)
+- data/campaign/reports.csv (subject, summary, assessment)
+- data/campaign/abilities.csv (name, desc)
+- data/campaign/commodities.csv (name, desc)
+- data/campaign/industries.csv (name, desc)
+- data/campaign/market_conditions.csv (name, desc)
+- data/campaign/special_items.csv (name, desc)
+- data/campaign/submarkets.csv (name, desc)
+- data/world/factions/*.faction (display names/articles/long names)
+- data/world/factions/default_ranks.json
+- data/world/factions/default_fleet_type_names.json
+- data/characters/personalities.csv (name, desc)
+- data/characters/skills/aptitude_data.csv (name, description)
+- data/characters/skills/skill_data.csv (name, description)
+- data/hullmods/hull_mods.csv (name, desc, short, sModDesc)
+- data/hulls/ship_data.csv (display fields such as name/designation/manufacturer text)
+- data/hulls/*.ship (hullName)
+- data/hulls/skins/*.skin (hullName, descriptionPrefix)
+- data/weapons/weapon_data.csv (name, tooltip strings, role strings, custom text)
+- data/shipsystems/ship_systems.csv (name)
+
+==================================================
+2) Usually Do Not Translate
+==================================================
+
+Mostly data/logic/asset references:
+- data/variants/*.variant
+- data/weapons/proj/*.proj
+- most .wpn and .system internals except explicit display text fields
+- Java source files (scripts, plugin classes)
+- ids, tags, enums, plugin names, class paths, asset/sound paths
+
+==================================================
+3) Hard Do-Not-Translate Tokens
+==================================================
+
+Never alter these patterns:
+- Placeholder variables: $something (examples: $faction, $marketName, $global.gatesActive)
+- Format tokens: %s, %d (and other printf placeholders)
+- Escape sequences: \n, \t, \r
+- Internal ids/keys: id, hullId, variantId, system id, script keys, JSON keys used as identifiers
+- Class/plugin references: com.fs.starfarer...
+- Asset/sound paths and ids: graphics/..., ui_..., terrain_..., sound ids
+- Slot ids and similar keys: WS 001, WS 002, etc.
+- Rule logic fields in data/campaign/rules.csv:
+  - trigger, conditions, script
+  - options ID before colon in option syntax id:Label
+
+==================================================
+4) Faction Names and Similar Proper Nouns
+Policy: Lock Canonical Names
+==================================================
+
+These should be treated as canonical and not translated unless you intentionally choose a full localization style guide that rewrites proper nouns globally and consistently.
+
+Canonical faction names from data/world/factions/*.faction:
+- Hegemony
+- Tri-Tachyon
+- Tri-Tachyon Corporation
+- Persean League
+- Sindrian Diktat
+- Lion's Guard
+- Knights of Ludd
+- Luddic Church
+- Church of Galactic Redemption
+- Luddic Path
+- Omega
+- Remnants
+- AI Remnants
+- Shrouded Dweller
+
+Faction abbreviations/prefixes that must stay exact:
+- HSS
+- TTS
+- PLS
+- SDS
+- LGS
+- LSS
+- CGR
+- TTDS
+- DSS
+- ISS
+- 01011001
+
+==================================================
+5) Similar Cases That Should Be Locked
+==================================================
+
+Places/system names (proper nouns):
+- Star systems and sector names in data/campaign/starmap.json and data/campaign/econ/*.json
+- Examples: Askonia, Corvus, Galatia, Hybrasil, Valhalla, Arcadia, Aztlan, etc.
+
+Organizations/titles/person names:
+- Examples seen in text: Galatia Academy, Provost Baird, Scylla Coureuse, Kanta
+
+Lore-era/event names:
+- Domain
+- Persean Sector
+- Second AI War
+
+Acronyms/initialisms:
+- AI
+- TSM
+- TRE
+
+==================================================
+6) Generic Terms Usually Safe to Translate
+==================================================
+
+These are generally descriptive, not unique canon entities:
+- pirates
+- independents
+- mercenaries
+- scavengers
+- refugees
+- neutral
+
+Generic ranks/posts from default_ranks/default_fleet_type_names are generally localizable:
+- Captain, Admiral, Commander, Trader, Administrator, Patrol, Task Force, etc.
+
+==================================================
+7) Practical Workflow Recommendation
+==================================================
+
+Before translation:
+1. Build a locked glossary from Section 3/4/5.
+2. Apply translation only to known text-bearing columns/fields.
+3. Validate placeholders and formatting tokens are unchanged.
+4. Validate ids/tags/script/plugin/class/path fields are unchanged.
+
+After translation:
+1. Spot-check dialogs in data/campaign/rules.csv.
+2. Spot-check weapon/system/skill tooltips for broken placeholders.
+3. Spot-check faction names and star system names for consistency.
+
