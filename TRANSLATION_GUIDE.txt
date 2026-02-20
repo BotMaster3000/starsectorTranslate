@@ -140,6 +140,14 @@ These are generally descriptive, not unique canon entities:
 Generic ranks/posts from default_ranks/default_fleet_type_names are generally localizable:
 - Captain, Admiral, Commander, Trader, Administrator, Patrol, Task Force, etc.
 
+Campaign terminology preferences (consistency glossary):
+- `Supplies` -> `Vorräte`
+- `Fuel` -> `Treibstoff`
+- `Food` -> `Nahrung`
+- `Survey Data` -> `Untersuchungsdaten` (not `Umfragedaten`)
+- `Volturnian Lobster Pens` -> `Volturnische Hummergehege` (`pens` = enclosures/breeding pens)
+- `Rogue AI Core` -> `Abtrünniger KI-Kern` (avoid literal `Schurken-...`)
+
 ==================================================
 7) Practical Workflow Recommendation
 ==================================================
